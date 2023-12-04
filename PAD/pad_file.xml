@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<XML_DIZ_INFO>
+<MASTER_PAD_VERSION_INFO>
+    <MASTER_PAD_VERSION>1.15</MASTER_PAD_VERSION>
+    <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+</MASTER_PAD_VERSION_INFO>
+<Company_Info>
+        <Company_Name>Pata-Sucia ltd</Company_Name>
+        <Address_1>5 Stamper Street</Address_1>
+        <Address_2>South Bretton</Address_2>
+        <City_Town>Peterborough</City_Town>
+        <State_Province>Cambridgeshire</State_Province>
+        <Zip_Postal_Code>PE3 9JS</Zip_Postal_Code>
+        <Country>United Kingdom</Country>
+        <Company_WebSite_URL>http://www.pata-sucia.com</Company_WebSite_URL>
+<Contact_Info>
+        <Author_First_Name>Sean</Author_First_Name>
+        <Author_Last_Name>Sullivan</Author_Last_Name>
+        <Author_Email>seansullivan@pata-sucia.com</Author_Email>
+        <Contact_First_Name>Sean</Contact_First_Name>
+        <Contact_Last_Name>Sullivan</Contact_Last_Name>
+        <Contact_Email>support@winblit.com</Contact_Email>
+    </Contact_Info>
+<Support_Info>
+        <Sales_Email>support@winblit.com</Sales_Email>
+        <Support_Email>support@winblit.com</Support_Email>
+        <General_Email>support@winblit.com</General_Email>
+        <Sales_Phone />
+        <Support_Phone />
+        <General_Phone />
+        <Fax_Phone />
+    </Support_Info>
+</Company_Info>
+<Program_Info>
+        <Program_Name>WinBlit Speedread</Program_Name>
+        <Program_Version>2.4.0.0</Program_Version>
+        <Program_Release_Month>04</Program_Release_Month>
+        <Program_Release_Day>14</Program_Release_Day>
+        <Program_Release_Year>2003</Program_Release_Year>
+        <Program_Cost_Dollars>20</Program_Cost_Dollars>
+        <Program_Cost_Other_Code />
+        <Program_Cost_Other />
+        <Program_Type>Shareware</Program_Type>
+        <Program_Release_Status>New Release</Program_Release_Status>
+        <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+        <Program_OS_Support>Win95,Win98,WinME,WinNT 4.x,WinXP,Windows2000</Program_OS_Support>
+        <Program_Language>English</Program_Language>
+<File_Info>
+        <Filename_Versioned>wbsr24.exe</Filename_Versioned>
+        <Filename_Previous>wbsr23.exe</Filename_Previous>
+        <Filename_Generic>wbsr.exe</Filename_Generic>
+        <Filename_Long>WinBlitSpeedread</Filename_Long>
+        <File_Size_Bytes>1043968</File_Size_Bytes>
+        <File_Size_K>1020</File_Size_K>
+        <File_Size_MB>1.02</File_Size_MB>
+    </File_Info>
+<Expire_Info>
+        <Has_Expire_Info>Y</Has_Expire_Info>
+        <Expire_Count>30</Expire_Count>
+        <Expire_Based_On>Either/Or</Expire_Based_On>
+        <Expire_Other_Info />
+        <Expire_Month />
+        <Expire_Day />
+        <Expire_Year />
+    </Expire_Info>
+        <Program_Change_Info>Max speed doubled, Sound click while speedreading, Autostart added.</Program_Change_Info>
+        <Program_Specific_Category>Internet</Program_Specific_Category>
+        <Program_Categories>Education, Internet,Word Processing,Productivity</Program_Categories>
+        <Program_System_Requirements>Internet Explorer 5 or later</Program_System_Requirements>
+        <Includes_JAVA_VM>N</Includes_JAVA_VM>
+        <Includes_VB_Runtime>N</Includes_VB_Runtime>
+        <Includes_DirectX>N</Includes_DirectX>
+</Program_Info>
+<Program_Descriptions>
+<English>
+        <Keywords>Speedread,online,RSVP,Speed,Read,Speed-Read,online,on-line,ProofRead,Internet Explorer,Outlook,Word,Microsoft</Keywords>
+        <Char_Desc_45>Speedread e-mails, Web pages &amp; Word docs .</Char_Desc_45>
+        <Char_Desc_80>Speedread e-mails,Web pages and Word documents, text files and much more.</Char_Desc_80>
+        <Char_Desc_250>Speed Reading Software. An assistant for people who read lots of information daily on their PC. From Internet Explorer, Microsoft Outlook or Word just click the WinBlit icon to read web pages, e-mail or Word document using speed reading techniques.</Char_Desc_250>
+        <Char_Desc_450>Speed Reading Software. WinBlit is a time-saving application for people who have to read large amounts of e-mails, Word documents or web pages daily on their PC. Whether browsing online using Internet Explorer, reading e-mails in Microsoft Outlook or documents in Microsoft Word, just click a toolbar icon to start speedreading with WinBlit. WinBlit uses Rapid Serial Visual Presentation to help the speed and comprehension of your reading.</Char_Desc_450>
+        <Char_Desc_2000>New Software to speedread e-mails, Web pages (online or offline) , Word documents and much more on your Windows PC. 
+Are you bogged down with information overload on your PC? Do you have to read through a mountain of e-mails and web pages in your day&apos;s work?  WinBlit Speedread aims tohelp  take the strain out of reading on your Windows PC and may enable  you to do so more quickly and comfortably. 
+WinBlit Speedread uses a text presentation technique known as Rapid Serial Visual Presentation (RSVP) and does so from within the Windows program that you are using. With RSVP the text you need to read is brought to your eyes as opposed to traditional reading in which your eyes move towards text. 
+Whenever you are browsing online or offline using Internet Explorer, reading e-mails in Microsoft Outlook or documents in Microsoft Word just the click of a toolbar button will bring up the text portion of the document in the WinBlit Text Window. The WinBlit Text Window uses RSVP to help you read  the document with greater speed and comprehension.
+WinBlit can also be operated as a standalone application called BlitPad which can speedread text files plus any text you copy and paste in from any other document (the windows clipboard).
+WinBlit Speedread is infinitely configurable allowing you to change fonts, colors, speed of reading and store these settings in preset configurations. Other features include a choice of operation modes (keyboard shortcuts, context menu and  toolbar), statistical display (to monitor your reading speed) and the full ability change the way it looks to create your own personal Windows Speedreader.
+Download and try WinBlit Speedread free for 30 days.</Char_Desc_2000>
+</English>
+</Program_Descriptions>
+<Web_Info>
+<Application_URLs>
+        <Application_Info_URL>http://www.winblit.com</Application_Info_URL>
+        <Application_Order_URL>http://www.winblit.com/purchase.htm</Application_Order_URL>
+        <Application_Screenshot_URL>http://www.winblit.com/images/InternetExplorer.png</Application_Screenshot_URL>
+        <Application_Icon_URL>http://www.winblit.com/images/winbliteye.png</Application_Icon_URL>
+        <Application_XML_File_URL>http://www.winblit.com/pad_file.xml</Application_XML_File_URL>
+    </Application_URLs>
+<Download_URLs>
+        <Primary_Download_URL>http://www.winblit.com/wbsr24.exe</Primary_Download_URL>
+        <Secondary_Download_URL>http://www.winblit.com/wbsr24.zip</Secondary_Download_URL>
+        <Additional_Download_URL_1 />
+        <Additional_Download_URL_2 />
+    </Download_URLs>
+</Web_Info>
+<Permissions>
+        <Distribution_Permissions />
+        <EULA />
+</Permissions>
+<ASP>
+    <ASP_FORM>Y</ASP_FORM>
+    <ASP_Member>Y</ASP_Member>
+    <ASP_Member_Number>04522</ASP_Member_Number>
+</ASP>
+</XML_DIZ_INFO>

@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.bbc.co.uk/arts/poetry/nationsfavourite.shtml --><HTML><HEAD><TITLE>BBC Online - Arts - Poetry</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META 
+content="BBC Online's Arts poetry section, an interactive site with poems to make, watch and hear." 
+name=DESCRIPTION>
+<META 
+content="arts, art zone, arts, poetry, poems, words, lines,  visual poetry, interactive poetry, audio poetry, John Hegley, poet in residence, poetry game, nation's favourite, children's poetry, children's poems" 
+name=KEYWORDS>
+<META content="May 2000" name=VERSION>
+<SCRIPT language=JavaScript>
+<!--
+
+if (document.images) {
+	var imageUrls = new Array("/artzone/poetry/images/furniture/normal_display_off.gif", "/artzone/poetry/images/furniture/normal_display_on.gif", "/artzone/poetry/images/furniture/normal_loud_off.gif", "/artzone/poetry/images/furniture/normal_loud_on.gif", "/artzone/poetry/images/furniture/normal_word_off.gif", "/artzone/poetry/images/furniture/normal_word_on.gif", "/artzone/poetry/images/furniture/normal_place_off.gif", "/artzone/poetry/images/furniture/normal_place_on.gif", "/artzone/poetry/images/furniture/normal_mess_off.gif", "/artzone/poetry/images/furniture/normal_mess_on.gif", "/artzone/poetry/images/furniture/funny_display_on.gif", "/artzone/poetry/images/furniture/funny_loud_on.gif", "/artzone/poetry/images/furniture/funny_word_on.gif", "/artzone/poetry/images/furniture/funny_place_on.gif", "/artzone/poetry/images/furniture/funny_mess_on.gif", "/artzone/poetry/images/furniture/funny_empty_on.gif", "/artzone/poetry/images/furniture/funny_empty_off.gif", "/artzone/poetry/images/furniture/funny_onlines_on.gif");
+	var pic = new Array(imageUrls.length);
+
+	for (i=0; i<imageUrls.length; i++) {
+		pic[i] = new Image();
+		pic[i].src = imageUrls[i];
+	}
+}
+
+// Rolling over section navs
+function light(sect,imageName) {
+	if (document.images) {
+       if (sect == 'funny') {
+			top.document.images[sect].src = "/artzone/poetry/images/furniture/" + sect + "_" + imageName + "_on.gif";
+		}
+		else {
+			top.document.images[sect + imageName].src = "/artzone/poetry/images/furniture/" + sect + "_" + imageName + "_on.gif";
+		}
+	}
+}
+
+// Rolling out section navs
+function darkness(sect,imageName) {
+	if (document.images) {	
+		if (sect == 'funny') {
+			top.document.images[sect].src = "/artzone/poetry/images/furniture/" + sect + "_empty" + "_off.gif";
+		}
+		else {
+			top.document.images[sect + imageName].src = "/artzone/poetry/images/furniture/" + sect + "_" + imageName + "_off.gif";
+		}
+	}
+}
+
+// SCROLLERS SCRIPT
+// the basic captions string 
+var captions = '';
+var box_caps = '';
+// string object with a length of space characters which corresponds to the width of the text field
+var str='';
+
+// width of marquee in pixels. Modify sizes here
+var scrollwidth='300';
+var textfield_size = '34';
+var textfield_rows = '3';
+var box_maxchars = '30';
+
+// millisec rate of JavaScript scroller
+var tick_scrollrate = 150;
+// value of marquee attribute scrollamount
+var marquee_scrollrate = 6;
+
+// Functions  
+function writeMarquee(){
+	//plants a marquee tag in page
+	document.write ("<font=ariel,helvetica size=2><marquee width=" + scrollwidth + " scrollamount=" + marquee_scrollrate + " bgcolor=#FFFFFF text=#000000>" + captions + "</marquee></font>"); 
+} 
+
+function writeScroller(){
+	//plants a textfield and starts scrolling 
+	//spaceBuffer should match the width of the text area
+	var spaceBuffer = "                                      ";
+	str = new String(spaceBuffer + captions);
+
+	//create TextField
+	document.write ("<form name='scroll_form'><input type='text' name=text size='" + textfield_size + "'></form>");  
+	scrollText('0');
+}
+
+function scrollText(count){
+	//var str = new String(captions);
+	document.forms[0].elements[0].value = str; 
+
+	//var count=0; 
+	if(count>=str.length){
+		count=0;
+	}
+	var thisString = '';
+	for(var a=count; a<str.length; a++){
+		thisString = thisString + str[a];
+	}
+
+	count = count + 1;
+	document.forms[0].elements[0].value = thisString; 
+	setTimeout("scrollText("+count+");",tick_scrollrate);
+}
+
+function writeBox(){
+	document.write ("<form><textarea wrap=virtual cols=" + textfield_size + " rows=" + textfield_rows + ">" + box_caps + "</textarea></form>");  
+}
+
+// Poppys
+
+function game (URL) {
+	window.open(URL,"game","status=no,scrollbars=yes,resizable=yes,width=580,height=387,top=0,left=0");
+}
+
+function titles (URL) {
+	window.open(URL,"titles","status=no,scrollbars=yes,resizable=yes,width=430,height=430,top=0,left=0");
+}
+
+function poppy (URL) {
+	window.open(URL,"titles","status=no,scrollbars=yes,resizable=yes,width=430,height=560,top=0,left=0");
+}
+
+function poppy2 (URL) {
+	window.open(URL,"titles","status=no,scrollbars=yes,resizable=yes,width=425,height=350,top=0,left=0");
+}
+function poppy3 (URL) {
+	window.open(URL,"titles","status=no,scrollbars=yes,resizable=yes,width=500,height=560,top=0,left=0");
+}
+//-- GENERIC POPUP SCRIPT
+function popwin(aPage, aTarget, w, h, var1, var2){
+        window.open(aPage,aTarget,'status=no,top=0,left=0,scrollbars=' +((var1=='scroll' || var2=='scroll')? 'yes' : 'no')+ ',resizable=' +((var1=='resize' || var2=='resize')? 'yes' : 'no')+ ',width='+w+',height='+h);
+}
+
+// Flash4 detection script
+var flashDetect = 0;
+if (navigator.plugins && (document.layers || document.all)){
+    if ( (navigator.userAgent.indexOf('MSIE') != -1) && (navigator.userAgent.indexOf('Win') != -1) ){
+        document.writeln(' <script language="VBscript"> ');
+        document.writeln(' If ScriptEngineMajorVersion >= 2 then ');
+        document.writeln(' on error resume next ');
+        document.writeln(' flashDetect = IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4"))');
+        document.writeln(' End If ');
+        document.writeln(' <\/script> ');
+    }
+    else{
+        flashDetect = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"])? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+        if (flashDetect) flashDetect = parseInt(plugin.description.substring(plugin.description.indexOf(".")-1)) >= 4;
+    }
+}
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY style="MARGIN: 0px" text=#000000 vLink=#990000 aLink=#990000 link=#990000 
+bgColor=#ffffff leftMargin=0 background="" topMargin=0 MARGINHEIGHT="0" 
+MARGINWIDTH="0"><!-- GLOBAL NAVIGATION V5.01  -->
+<TABLE cellSpacing=0 cellPadding=0 width=600 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width=110><IMG height=3 alt="" src="Test_files/tiny.gif" 
+      width=110 border=0><BR clear=all><A href="http://www.bbc.co.uk/"><IMG 
+      height=40 alt="BBC ONLINE" hspace=3 src="Test_files/logo.gif" width=74 
+      vspace=4 border=0></A><BR clear=all><A 
+      href="http://www.bbc.co.uk/cgi-bin/education/betsie/parser.pl"><IMG 
+      height=9 alt="Click for a Text Only version of this page" hspace=7 
+      src="Test_files/txt.gif" width=43 vspace=2 border=0></A></TD>
+    <TD vAlign=top width=490><!-- banner --><IMG height=70 alt="Arts Logo" 
+      src="Test_files/arts_title.gif" width=150 align=left border=0> <!-- banner --></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=110 align=left border=0>
+  <TBODY>
+  <TR>
+    <TD width=110>
+      <TABLE cellSpacing=0 cellPadding=0 width=110 border=0>
+        <TBODY>
+        <TR>
+          <TD width=3><IMG height=1 alt="" src="Test_files/tiny.gif" 
+          width=3></TD>
+          <TD width=5><IMG height=1 alt="" src="Test_files/tiny.gif" 
+          width=5></TD>
+          <TD align=middle width=100><IMG height=1 alt="" 
+            src="Test_files/tiny.gif" width=100><BR clear=all><FONT 
+            face="Arial, Helvetica" size=1>WEDNESDAY<BR>3rd October 
+          2001</FONT></TD>
+          <TD width=2><IMG height=1 alt="" src="Test_files/tiny.gif" 
+          width=2></TD></TR>
+        <SCRIPT language=JavaScript type=text/javascript>
+<!-- // hide from old browsers
+function mainSites(x)
+  { if (x != "") { if (x.indexOf('http:') != -1) { self.location= x; }
+  else { self.location= "http://www.bbc.co.uk" + x; }} return false; }
+function popmailwin(x, y) {window.open(x,y,'status=no,scrollbars=yes,resizable=yes,width=350,height=400');}
+// -->
+</SCRIPT>
+
+        <TR>
+          <TD width=8 colSpan=2><IMG height=1 alt="" src="Test_files/tiny.gif" 
+            width=1></TD>
+          <TD width=102 colSpan=2><IMG height=6 alt="" 
+            src="Test_files/tiny.gif" width=1><BR clear=all><FONT 
+            face=Arial,Helvetica size=1><A href="http://www.bbc.co.uk/a-z/">A-Z 
+            Index</A> | <A 
+          href="http://www.bbc.co.uk/search/">Search</A></FONT></TD></TR>
+        <TR>
+          <FORM action=/cgi-bin/openurl.pl method=get>
+          <TD width=110 colSpan=4><FONT face="Arial, Helvetica" size=2><IMG 
+            height=3 alt="" src="Test_files/tiny.gif" width=1><BR 
+            clear=all><SELECT 
+            onchange="mainSites(this.options[this.selectedIndex].value); return false;" 
+            name=link> <OPTION value="" selected>Main Sites</OPTION> <OPTION 
+              value=/>BBC Home<OPTION value=/news/>News<OPTION 
+              value=/sport/>Sport<OPTION value=/weather/>Weather<OPTION 
+              value=/artzone/>Arts<OPTION value=/audiovideo/>Audio/Vid<OPTION 
+              value=/education/>Education<OPTION 
+              value=/entertainment/>Ent'ment<OPTION value=/films/>Films<OPTION 
+              value=/food/>Food<OPTION value=/gardening/>Gardening<OPTION 
+              value=/health/>Health<OPTION value=/history/>History<OPTION 
+              value=/homes/>Homes<OPTION value=/kids/>Kids<OPTION 
+              value=/livechat/>Livechat<OPTION value=/music/>Music<OPTION 
+              value=/nature/>Nature<OPTION value=/radio/>Radio<OPTION 
+              value=/religion/>Religion<OPTION value=/science/>Science<OPTION 
+              value=/so/>Teens<OPTION value=/whatson/>What's On<OPTION 
+              value=/worldservice/>World S<OPTION value=""><OPTION 
+              value=/england/>England<OPTION value=/northernireland/>N 
+              Ireland<OPTION value=/scotland/>Scotland<OPTION 
+              value=/wales/>Wales<OPTION value=""><OPTION value=/info/>About 
+              BBC<OPTION value=/talent/>BBC Talent<OPTION value=/jobs/>BBC 
+              Jobs<OPTION value=http://www.bbcshop.com/bbc_shop/>BBC 
+              Shop</OPTION></SELECT> <IMG height=1 alt="" hspace=0 
+            src="Test_files/tiny.gif" width=1 vspace=1><BR clear=all><IMG 
+            height=14 alt="" hspace=0 src="Test_files/tiny.gif" width=3 
+            align=left><INPUT type=image height=14 alt="Go to the site" width=25 
+            src="Test_files/go.gif" border=0 name=GO><BR clear=all><IMG height=1 
+            alt="" hspace=0 src="Test_files/tiny.gif" width=1 
+          vspace=4></FONT></TD></FORM></TR>
+        <TR>
+          <TD width=8 colSpan=2><IMG height=1 alt="" src="Test_files/tiny.gif" 
+            width=1></TD>
+          <TD width=100><FONT face="Arial, Helvetica" size=2><A 
+            href="http://www.bbc.co.uk/">BBC Homepage</A><BR><A 
+            href="http://www.bbc.co.uk/arts/">Arts</A> </FONT></TD>
+          <TD width=2><IMG height=1 alt="" src="Test_files/tiny.gif" 
+          width=1></TD></TR>
+        <TR>
+          <TD width=3><IMG height=1 alt="" src="Test_files/tiny.gif" 
+          width=1></TD>
+          <TD vAlign=top width=5><IMG height=5 alt="" hspace=0 
+            src="Test_files/arrow.gif" width=3 vspace=14 border=0></TD>
+          <TD vAlign=top width=100><IMG height=7 alt="" 
+            src="Test_files/tiny.gif" width=1><BR clear=all><FONT 
+            face="Arial, Helvetica" size=2><A 
+            href="http://www.bbc.co.uk/arts/poetry/index.shtml"><B>Poetry</B></A><BR><A 
+            href="http://www.bbc.co.uk/arts/poetry/ondisplay/index.shtml">On 
+            Display</A><BR><A 
+            href="http://www.bbc.co.uk/arts/poetry/outloud/index.shtml">Out 
+            Loud</A><BR><A 
+            href="http://www.bbc.co.uk/arts/poetry/wordplay/index.shtml">Word 
+            Play</A><BR><A 
+            href="http://www.bbc.co.uk/arts/poetry/inplace/index.shtml">Resident 
+            Poet</A><BR><A 
+            href="http://www.bbc.co.uk/arts/events/">Events</A><BR><A 
+            href="http://www.bbc.co.uk/cgi-perl/h2/h2.cgi?x=y&amp;board=arts">Message 
+            Board</A> &nbsp;<BR>
+            <HR align=left width=50>
+            <A href="http://www.bbc.co.uk/mybbc/">my BBC</A><BR><BR><A 
+            href="http://www.bbc.co.uk/feedback/">Feedback</A><BR><BR><A 
+            href="http://www.bbc.co.uk/help/">Help</A><BR><BR><BR><FONT 
+            size=1>Like this page?<BR><A 
+            onclick="popmailwin('/cgi-bin/navigation/mailto.pl?GO=1','Mailer')" 
+            href="http://www.bbc.co.uk/cgi-bin/navigation/mailto.pl?GO=1" 
+            target=Mailer>Send it to a friend!</A></FONT></FONT></TD>
+          <TD width=2><IMG height=1 alt="" src="Test_files/tiny.gif" 
+          width=1></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><IMG height=1 alt="" 
+hspace=0 src="Test_files/tiny.gif" width=10 align=left border=0> <!-- End of GLOBAL NAVIGATION V500  -->
+<TABLE cellSpacing=0 cellPadding=0 width=480 border=0>
+  <TBODY>
+  <TR>
+    <TD colSpan=2><IMG height=80 alt="" src="Test_files/tiny.gif" width=1 
+      border=0><BR><IMG height=24 alt="" src="Test_files/nationsfav2.gif" 
+      width=350 align=right border=0></TD></TR>
+  <TR>
+    <TD vAlign=top width=287>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=4 width=287 
+      bgColor=white border=1>
+        <TBODY>
+        <TR>
+          <TD><!-- Out Loud, Display and Message Boards --><IMG height=150 
+            alt="Zoe Ball" src="Test_files/zoeball2.jpg" width=80 align=left 
+            border=0> <FONT face="Arial, Helvetica" size=2><B>What's your 
+            favourite children's poem?</B> <BR><BR>The BBC are celebrating 
+            National Poetry Day by launching a poll to find the Nations' 
+            Favourite Children's Poem. <BR><BR><BR>A special TV programme is 
+            going out on the eve of Poetry Day on <B>BBC1 at 7.30pm on Wednesday 
+            October 3</B>. <BR><BR>Presented by Zoe Ball it will include the 
+            results of a national poll vote to find the Nation's Favourite, as 
+            well as performances of some of the top ten poems from our poetry 
+            competition which has been judged by Spike Milligan. Zoe will be 
+            joined by Harry Enfield, Patsy Palmer and Steps. <BR><BR></FONT><IMG 
+            height=10 alt="" src="Test_files/tiny.gif" width=1 border=0><BR 
+            clear=all><FONT face="Arial, Helvetica" size=2>
+            <CENTER>
+            <DIV align=center><B>SO WHAT'S YOUR 
+FAVOURITE?</B><BR></DIV></CENTER>
+            <CENTER>
+            <DIV align=center>Could it be:</DIV></CENTER>
+            <UL>
+              <LI>Edward Lear's <I><A 
+              onclick="poppy('lear.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/lear.shtml" 
+              target=_blank>The Owl and the Pussycat<A></I> 
+              <LI>Hilaire Belloc's <I><A 
+              onclick="poppy('belloc.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/belloc.shtml" 
+              target=_blank>Matilda</A></I> <!--<li>Spike Milligan's <i><a href="milligan.shtml" onClick="poppy('milligan.shtml'); return false;" target="_blank">On the Ning Nang Nong</a></i></li>-->
+              <LI>Allan Ahlberg's <I><A 
+              onclick="poppy('ahlberg.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/ahlberg.shtml" 
+              target=_blank>Please Mrs Butler</A></I> 
+              <LI>AA Milne's <I><A onclick="poppy('milne.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/milne.shtml" 
+              target=_blank>The King's Breakfast</A></I> 
+              <LI>Roald Dahl's <I><A 
+              onclick="poppy('dahl.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/dahl.shtml" 
+              target=_blank>Down vith Children! Do them In!</A></I> 
+              <LI>Benjamin Zephaniah's <I><A 
+              onclick="poppy('zephaniah.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/zephaniah.shtml" 
+              target=_blank>Talking Turkeys!!<A></I> 
+              <LI>Michael Rosen's <I><A 
+              onclick="poppy('rosen.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/rosen.shtml" 
+              target=_blank>Don't </A></I>
+              <LI>Roger McGough's <I><A 
+              onclick="poppy('mcgough.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/mcgough.shtml" 
+              target=_blank>The Cats' Protection League</I></A> 
+              <LI>John Hegley's <I><A 
+              onclick="poppy('hegley.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/hegley.shtml" 
+              target=_blank>Max</A></I> 
+              <LI>Lewis Caroll's <I><A 
+              onclick="poppy('carroll.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/carroll.shtml" 
+              target=_blank>Jabberwocky</A></I> 
+              <LI>Alfred Noyes' <I><A 
+              onclick="poppy('noyes.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/noyes.shtml" 
+              target=_blank>The Highwayman</A></I> 
+              <LI>Walter de la Mare <I><A 
+              onclick="poppy('delamare.shtml'); return false;" 
+              href="http://www.bbc.co.uk/arts/poetry/delamare.shtml" 
+              target=_blank>The Listeners</A></I> </LI></UL><!--	
+			<center><div align="center"> Or do you have another suggestion?</div align="center"></center><br><br>
+				  <IMG SRC="images/book.jpg" WIDTH="80" HEIGHT="60" BORDER="0" ALT="Visual Poetry" ALIGN="left"><IMG SRC="/furniture/tiny.gif" WIDTH="5" HEIGHT="60" ALT="" BORDER="0" ALIGN="right">
+<FONT FACE="Arial, Helvetica" SIZE="2">
+<b>To vote for your favourite children's poem email</b> <a href="mailto:nationsfavourite@bbc.co.uk">nationsfavourite@bbc.co.uk</a> with the your poem of choice, or you can call <b>09066 803 602</b><br><br></FONT>
+<FONT FACE="Arial, Helvetica" SIZE="1">Calls will be charged at 25p a minute. Phone lines and email will close at midnight on 28th September 2001.
+			
+			  <BR CLEAR="all">
+			   <IMG SRC="/furniture/tiny.gif" WIDTH="1" HEIGHT="10" ALT="" BORDER="0"><BR CLEAR="all">-->
+            <CENTER>
+            <DIV align=center>Listen to poems by some of these writers in the <A 
+            href="http://www.bbc.co.uk/arts/poetry/outloud/index.shtml">Out Loud 
+            section</A></DIV></CENTER><BR 
+      clear=all></FONT><BR></TD></TR></TBODY></TABLE></TD>
+    <TD vAlign=top align=left width=193>
+      <TABLE cellSpacing=8 cellPadding=0 width=193 border=0>
+        <TBODY>
+        <TR>
+          <TD><!-- Promo & DIY Poetry --><A 
+            href="http://www.bbc.co.uk/arts/poetry/outloud/index.shtml"><IMG 
+            height=77 alt="Listen to poets read their work" 
+            src="Test_files/outloud_promo.jpg" width=190 border=1></A><BR><FONT 
+            face="Arial, Helvetica" size=2><IMG height=2 alt="" 
+            src="Test_files/tiny.gif" width=190 border=0><BR><A 
+            href="http://www.bbc.co.uk/arts/poetry/outloud/index.shtml"><IMG 
+            height=16 alt="" src="Test_files/outloud.gif" width=51 
+            border=0></A><BR>Listen to poets <A 
+            href="http://www.bbc.co.uk/arts/poetry/outloud/index.shtml">reading 
+            their work</A> 
+            <P><A 
+            href="http://www.bbc.co.uk/radio3/speech/poetryproms.shtml"><IMG 
+            height=87 alt="Poetry Proms with Radio 3" 
+            src="Test_files/poetryproms_promo.gif" width=190 
+            border=1></A><BR>Take a look at BBC Radio 3's <B><A 
+            href="http://www.bbc.co.uk/radio3/speech/poetryproms.shtml">Poetry 
+            Proms season</A></B> <IMG height=40 alt="" src="Test_files/tiny.gif" 
+            width=11 align=left border=0><BR clear=all><A 
+            href="http://www.bbc.co.uk/arts/poetry/wordplay/index.shtml"><IMG 
+            height=20 alt="Word Play" src="Test_files/t_word_play.gif" width=72 
+            border=0></A><BR><A 
+            href="http://www.bbc.co.uk/arts/poetry/wordplay/index.shtml"><IMG 
+            height=87 alt="Play with words" src="Test_files/diy.gif" width=190 
+            border=0></A> </FONT><FONT face="Arial, Helvetica" size=2>Create 
+            your own <A 
+            href="http://www.bbc.co.uk/arts/poetry/wordplay/index.shtml">visual 
+            poems</A></P>
+            <P align=center>Listen to <A 
+            href="http://www.bbc.co.uk/cgi-bin/voices/artsearch.pl?act=profession&amp;choice=poets">audio 
+            interviews</A> with some of your favourite poets </P><!--<FONT FACE="Arial, Helvetica" SIZE="2">Send your entries in for the <A HREF="http://www.bbc.co.uk/nature/poetry/competition.shtml">BBC Wildlife Poet of the Year 2001</A> competition.--></FONT></TD></TR></TBODY></TABLE><BR>
+      <DIV align=left></DIV></TD></TR></TBODY></TABLE><BR clear=all></BODY></HTML>

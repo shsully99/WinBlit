@@ -1,0 +1,10 @@
+[HKEY_LOCAL_MACHINE\SOFTWARE\PataSucia\WinBlit\Products]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\PataSucia\WinBlit\Products\1]
+"a"=dword:00002492
+"b"=dword:00000001
+"c"=dword:00000578
+"d"=dword:0000038f
+"f"=hex:47,36,44,33,4d,30,54,55,42,38,36,34,43,50,36,50,33,47,31,56,33,57,33,\
+  4b,31
+

@@ -1,0 +1,156 @@
+////////////////////////////////////////////////////////////////////////////////
+///////////////////InstallShield Media Library Report Summary///////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+Media Name      : New Media
+Report Filename : C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\Installation\WinBlit\Media\New Media\Report Files\4-02-2002 1.41.16PM.rpt
+Date            : 04/02/2002
+Time            : 1:41PM
+
+Number of Components:                3 
+Number of File Groups:               7 
+Number of Files:                     9 
+Total Size of Files:         1,009,050 (bytes)
+
+==========
+COMPONENTS
+==========
+
+
+     TargetDir
+     ExchangeExtension
+     SelfRegDlls
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Report Details/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+================================================================================
+                             COMPONENT: "TargetDir"
+================================================================================
+
+SUMMARY:
+    Total Files:                6 (files for this component only)
+    Source Bytes:         345,498 (files for this component only)
+
+
+                        **** File Group: "BlitPad" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\WinBlitPad\Export\Run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    BlitPad.exe                 03/19/2002  10:15:11      143,360  2.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               143,360               
+
+
+                       **** File Group: "Help Files" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\Help Files\HTMLHelp
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlit Proofread.chm       04/01/2002  10:53:07       34,491               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                34,491               
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\Demo
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlit Demo.chm            04/02/2002  13:23:19       15,628               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                15,628               
+
+
+                          **** File Group: "Reg" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\Registry
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlit.reg                 03/19/2002  10:05:23        7,038               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                 7,038               
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\PAD
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    pad_file.xml                03/18/2002  20:33:50        7,253               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                 7,253               
+
+
+                     **** File Group: "Word Template" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\Office
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlitTemplate.dot         03/12/2002  17:13:17      137,728               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               137,728               
+
+
+================================================================================
+                         COMPONENT: "ExchangeExtension"
+================================================================================
+
+SUMMARY:
+    Total Files:                1 (files for this component only)
+    Source Bytes:         464,282 (files for this component only)
+
+
+                   **** File Group: "ExchangeExtension" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\WinBlitExchangeExtension\export\run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    ...itExchangeExtension.dll  03/19/2002  10:11:45      118,784  2.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               118,784               
+
+
+================================================================================
+                            COMPONENT: "SelfRegDlls"
+================================================================================
+
+SUMMARY:
+    Total Files:                2 (files for this component only)
+    Source Bytes:       1,009,050 (files for this component only)
+
+
+                     **** File Group: "ReaderManager" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\WinBlitReaderManager\Export\Run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlitReaderManager.dll    04/02/2002  11:28:46      413,696  2.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               413,696               
+
+
+                        **** File Group: "WebBand" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\WinBlitWebBand\export\run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlitWebBand.dll          03/19/2002  10:10:31      131,072  2.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               131,072               

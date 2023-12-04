@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8c0e4123-ba76-41f0-9161-0a9182077e25}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2f13671d-a08b-47fc-94e5-909951901a39}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{756d8c40-2e13-4dcb-8041-b161a40b96ae}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="About.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlitUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BltCreator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BrowserWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HTMLReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Reg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Speed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Statistic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Statistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TXTReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="W95TRACE.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinBlitData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinBlitProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinBlitReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinBlitReaderManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinBlitRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WordReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="WinBlitReaderManager.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinBlitReaderManager.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="About.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlitUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BltCreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BrowserWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FullTlb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HTMLReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IDLConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Reg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Speed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Statistic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StlClasses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TXTReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="W95TRACE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinBlitConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinBlitData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinBlitDataError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinBlitProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinBlitReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinBlitRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WordReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="winblitre.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Import\Build\htmlhelp.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="WinBlitReaderManager.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BlitScript.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="BrowserWrapper.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Setting.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Settings.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Statistic.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Statistics.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TrackBarWindow.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="WinBlitData.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="WinBlitReader.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

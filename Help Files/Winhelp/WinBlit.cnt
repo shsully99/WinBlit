@@ -1,0 +1,48 @@
+:Base WinBlit.hlp
+1 Introduction=INTRODUCTION
+1 The WinBlit Window
+2 Overview=WINBLIT_WINDOW_OVERVIEW
+2 Text Window=TEXT_WINDOW
+2 Toolbar=TOOLBAR
+2 Trackbar=TRACKBAR
+2 Statusbar=STATUS_BAR
+2 Context Menu=CONTEXT_MENU
+2 Shortcut Keys=SHORTCUT_KEYS
+2 Metafile=METAFILE
+1 Using WinBlit
+2 Overview=USING_WINBLIT_OVERVIEW
+2 Internet Explorer=INTERNET_EXPLORER
+2 BlitPad=BLITPAD
+2 Outlook=OUTLOOK
+2 Word=WORD
+1 Configuring WinBlit
+2 Overview=CONFIGURING_WINBLIT_OVERVIEW
+2 Configuration Tab=CONFIGURATION_TAB
+2 Add Configuration Dialog=ADD_CONFIGURATION_DIALOG
+2 Fixation Details Tab=FIXATION_DETAILS_TAB
+2 Fonts and Colors Tab=FONTS_AND_COLORS_TAB
+2 Breakpoints Tab=BREAKPOINTS_TAB
+2 Add Breakpoint Dialog=ADD_BREAKPOINT_DIALOG
+2 Speed Tab=SPEED_TAB
+1 Installing and Uninstalling
+2 Installation=INSTALLATION
+2 Uninstallation=UNINSTALLATION
+1 Requirements
+2 Requirements=REQUIREMENTS
+1 Registration
+2 Registration=REGISTRATION
+1 Glossary
+2 Fixation=FIXATION
+2 Configuration=CONFIGURATION
+2 Breakpoint=BREAKPOINT
+2 Cycle=CYCLE
+2 Configuration Type
+3 Configuration Type=CONFIGURATION_TYPE
+3 Regular=REGULAR
+3 Static=STATIC
+3 S-Shaped=S-SHAPED
+2 Fixation Width Type
+3 Fixation Width Type=FIXATION_WIDTH_TYPE
+3 Words=WORDS
+3 Characters=CHARACTERS
+3 Columns=COLUMNS

@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next 
+	Set WB = window.parent.parent.frames(1).document.WinBlitReader
+	If WB <> Nothing Then 
+		If i = 0 Then
+			WB.DemoMode = 2
+			WB.LoadData 10005, window.document
+			WB.Display
+		Else 
+			WB.UnloadData 		
+		End If	
+	Else
+		MsgBox "Not found WB"
+	End If 
+End Sub
+</SCRIPT>
+
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+<TABLE style="WIDTH: 580px; HEIGHT: 160px" borderColor=#ffff99 cellSpacing=1 
+cellPadding=1 width=580 align=center border=1>
+  <TR>
+    <TD>
+      <P>         
+      Welcome to the WinBlit Speedread demonstration. 
+      This demonstration aims to give you an overview of WinBlit Speedread and 
+      how it can be used to help you work more effectively on your Windows 
+      PC.&nbsp;You can&nbsp;progress through&nbsp;the demonstation by clicking 
+      the&nbsp;button&nbsp;in the left frame&nbsp;labelled <STRONG><FONT color=red>" Next <FONT face=Script 
+      size=4>&gt;&gt;</FONT>".</FONT> </STRONG>         
+       </P>
+      <P>          In 
+      the frame&nbsp;below&nbsp;you can see a sample of&nbsp;the WinBlit Window. It is shown here&nbsp;placed inside a 
+      web page. </P>
+      <P>As you traverse through the demonstration&nbsp;different features of 
+      WinBlit will be explained to you. Please feel free to try them out 
+      in&nbsp;the&nbsp;window in the frame below as they are explained in the 
+      text. </P>
+    </TD>
+   </TR>
+  </TABLE>
+</BODY>
+</HTML>
+

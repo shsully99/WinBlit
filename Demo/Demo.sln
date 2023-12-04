@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{2CA5CB9B-D322-11D0-AD8F-00C04FB6BE4C}") = "Demo", "Demo.vup", "{7754B345-3ECD-4B04-8441-D539827801F0}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {7754B345-3ECD-4B04-8441-D539827801F0}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {7754B345-3ECD-4B04-8441-D539827801F0}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

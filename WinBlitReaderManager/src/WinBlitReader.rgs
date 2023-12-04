@@ -1,0 +1,35 @@
+HKCR
+{
+	WinBlitReaderManager.WinBlitReader.1 = s 'WinBlitReader Class'
+	{
+		CLSID = s '{70AA5212-27A9-11d5-85B6-269F99000000}'
+	}
+	WinBlitReaderManager.WinBlitReader = s 'WinBlitReader Class'
+	{
+		CLSID = s '{70AA5212-27A9-11d5-85B6-269F99000000}'
+		CurVer = s 'WinBlitReaderManager.WinBlitReader.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {70AA5212-27A9-11d5-85B6-269F99000000} = s 'WinBlitReader Class'
+		{
+			ProgID = s 'WinBlitReaderManager.WinBlitReader.1'
+			VersionIndependentProgID = s 'WinBlitReaderManager.WinBlitReader'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{A1777A94-27A6-11d5-85B6-269F99000000}'
+			'Version' = s '1.0'
+		}
+	}
+
+}

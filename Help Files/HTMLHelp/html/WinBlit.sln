@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{2CA5CB9B-D322-11D0-AD8F-00C04FB6BE4C}") = "WinBlit", "WinBlit.vup", "{61DDD517-D811-44DC-BC0A-6CC431B5D2C3}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {61DDD517-D811-44DC-BC0A-6CC431B5D2C3}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {61DDD517-D811-44DC-BC0A-6CC431B5D2C3}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

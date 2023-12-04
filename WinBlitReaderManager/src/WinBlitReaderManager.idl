@@ -1,0 +1,339 @@
+//***************************************************************************
+//*
+//*		Name		: WinBlitReaderManager.idl
+//*							
+//*		$Revision:$
+//*
+//*		Date        : 21-Feb-2002
+//*
+//*		Author      : Sean Sullivan
+//*
+//*
+//*		Copyright (c) Pata-Sucia Ltd 2001
+//*		All rights reserved
+//*
+//*		This document contains matter that is confidential,
+//*		proprietary information of Pata-Sucia 
+//*
+//***************************************************************************
+
+//***************************************************************************
+//*		M O D U L E   D E S C R I P T I O N
+//***************************************************************************
+//*
+//*	
+//*
+//* 
+//*
+//***************************************************************************
+//***************************************************************************
+//***************************************************************************
+//*		H I S T O R Y
+//***************************************************************************
+/*
+$Log:$*/
+//#define SHOW_TLB_METHODS
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+
+	[
+		object,
+		uuid(0E9E0E5F-190E-11D5-859E-6CA415000000),
+		dual,
+		helpstring("IWinBlitData Interface"),
+		pointer_default(unique)
+	]
+	interface IWinBlitData : IDispatch
+	{
+		[id(1), helpstring("method Initialise")]	HRESULT Initialise([in] long lDataSourceType, [in] VARIANT varDataSourceURL, [in] VARIANT varConfig);
+		[id(2), helpstring("method GetData")]		HRESULT GetData([in] long lDataOffset, [in,out] BSTR*  pbstrData);
+		[id(3), helpstring("method FindString")]	HRESULT FindString([in] BSTR bstrSearchString, [in] long lSearchOffset, [in] long lSearchDirection, [out,retval] long* lStringOffset);
+		[id(4), helpstring("method Uninitialise")]	HRESULT Uninitialise();
+		[id(5), helpstring("method GetParaAtPercent")] HRESULT GetParaAtPercent([in] long lPercent, [in,out] long* lPara, BOOL bRound);
+		[id(6), helpstring("method GetPercentAtPara")] HRESULT GetPercentAtPara([in,out] long* lPercent, [in] long lPara);
+	};
+
+	[
+		object,
+		uuid(A1777A90-27A6-11d5-85B6-269F99000000),
+		dual,
+		helpstring("IWinBlitReader Interface"),
+		pointer_default(unique)
+	]
+	interface IWinBlitReader : IDispatch
+	{
+		[id(36), helpstring("method LoadData")] HRESULT LoadData([in] long lDataSourceType, [in] VARIANT varDataSource);
+		[id(37), helpstring("method UnloadData")] HRESULT UnloadData();
+		[id(11), helpstring("method Display")] HRESULT Display();
+		[id(8), helpstring("method Start")] HRESULT Start();
+		[id(9), helpstring("method Stop")] HRESULT Stop();
+		[id(47), helpstring("method ShowHelp")] HRESULT ShowHelp([in] long lHelpType);
+		[id(48), helpstring("method Register")] HRESULT Register();
+		[id(52), helpstring("method About")] HRESULT ShowAbout();
+		[propget, id(53), helpstring("property State")] HRESULT State([out, retval] long *pVal);
+		[propput, id(51), helpstring("property DemoMode")] HRESULT DemoMode([in] long newVal);
+		[propget, id(51), helpstring("property DemoMode")] HRESULT DemoMode([out, retval] long *pVal);
+		#ifdef SHOW_TLB_METHODS
+			[propget, id(1), helpstring("property CursorTextColor")]
+			HRESULT CursorTextColor([out, retval] OLE_COLOR *pVal);
+			[propput, id(1), helpstring("property CursorTextColor")] 
+			HRESULT CursorTextColor([in] OLE_COLOR newVal);
+			[propget, id(2), helpstring("property CursorFillColor")] 
+			HRESULT CursorFillColor([out, retval] OLE_COLOR *pVal);
+			[propput, id(2), helpstring("property CursorFillColor")] 
+			HRESULT CursorFillColor([in] OLE_COLOR newVal);
+			[propget, id(3), helpstring("property DisplayPeriod (milliseconds)")] 
+			HRESULT DisplayPeriod([out, retval] long *pVal);
+			[propput, id(3), helpstring("property DisplayPeriod (milliseconds)")] 
+			HRESULT DisplayPeriod([in] long newVal);
+			[propget, id(4), helpstring("property BlackoutPeriod (milliseconds)")] 
+			HRESULT BlackoutPeriod([out, retval] long *pVal);
+			[propput, id(4), helpstring("property BlackoutPeriod (milliseconds)")] 
+			HRESULT BlackoutPeriod([in] long newVal);
+			[id(10), helpstring("method Pause")] HRESULT Pause();
+			[propput, id(14)] HRESULT ScreenBackColor([in]OLE_COLOR clr);
+			[propget, id(14)] HRESULT ScreenBackColor([out,retval]OLE_COLOR* pclr);
+			[propput, id(15)] HRESULT ScreenFillColor([in]OLE_COLOR clr);
+			[propget, id(15)] HRESULT ScreenFillColor([out, retval]OLE_COLOR* pclr);
+			[propput, id(16)] HRESULT TextFont([in]IFontDisp* pFont);
+			[propget, id(16)] HRESULT TextFont([out, retval]IFontDisp** ppFont);
+			[propput, id(17)] HRESULT ScreenTextColor([in]OLE_COLOR clr);
+			[propget, id(17)] HRESULT ScreenTextColor([out,retval]OLE_COLOR* pclr);
+			[propget, id(19), helpstring("property Cursor")] HRESULT Cursor([out, retval] long *pVal);
+			[propput, id(19), helpstring("property Cursor")] HRESULT Cursor([in] long newVal);
+			[propget, id(20), helpstring("property CursorWidth")] HRESULT CursorWidth([out, retval] long *pVal);
+			[propput, id(20), helpstring("property CursorWidth")] HRESULT CursorWidth([in] long newVal);
+			[propget, id(21), helpstring("property CursorHeight")] HRESULT CursorHeight([out, retval] long *pVal);
+			[propput, id(21), helpstring("property CursorHeight")] HRESULT CursorHeight([in] long newVal);	
+			[propget, id(24), helpstring("property BaseTime")] HRESULT BaseTime([out, retval] long *pVal);
+			[propput, id(24), helpstring("property BaseTime")] HRESULT BaseTime([in] long newVal);
+			[propget, id(25), helpstring("property HighlightPeriod")] HRESULT HighlightPeriod([out, retval] long *pVal);
+			[propput, id(25), helpstring("property HighlightPeriod")] HRESULT HighlightPeriod([in] long newVal);
+			[id(26), helpstring("method LineUp")] HRESULT LineUp([in] long Lines);
+			[id(27), helpstring("method LineDown")] HRESULT LineDown([in] long Lines);
+			[id(28), helpstring("method PageUp")] HRESULT PageUp([in] long Pages);
+			[id(29), helpstring("method PagesDown")] HRESULT PageDown([in] long Pages);
+			[propget, id(30), helpstring("property Settings")] HRESULT Settings([out, retval] IDispatch* *pVal);
+			[propget, id(31), helpstring("property Statistics")] HRESULT Statistics([out, retval] IDispatch* *pVal);
+			[propget, id(32), helpstring("property Top")] HRESULT Top([out, retval] long *pVal);
+			[propput, id(32), helpstring("property Top")] HRESULT Top([in] long newVal);
+			[propget, id(33), helpstring("property Bottom")] HRESULT Bottom([out, retval] long *pVal);
+			[propput, id(33), helpstring("property Bottom")] HRESULT Bottom([in] long newVal);
+			[propget, id(34), helpstring("property Right")] HRESULT Right([out, retval] long *pVal);
+			[propput, id(34), helpstring("property Right")] HRESULT Right([in] long newVal);
+			[propget, id(35), helpstring("property Left")] HRESULT Left([out, retval] long *pVal);
+			[propput, id(35), helpstring("property Left")] HRESULT Left([in] long newVal);
+			[id(38), helpstring("method LoadFromRegistry")] HRESULT LoadSettings(BSTR bstrKey, long lType);
+			[id(39), helpstring("method SaveToRegistry")] HRESULT SaveSettings(BSTR bstrKey, long lType);
+			[id(40), helpstring("method ShowControls")] HRESULT ShowControls(BOOL bShow);
+			[id(41), helpstring("method ShowTrackBar")] HRESULT ShowTrackBar([in] BOOL bShowTrackBar);
+			[id(42), helpstring("method ShowMetafile")] HRESULT ShowMetafile(BOOL bMetafile);
+			[id(44), helpstring("method ShowStatusBar")] HRESULT ShowStatusBar([in] BOOL bShowStatusBar);
+			[propget, id(45), helpstring("property Description")] HRESULT Description([out, retval] BSTR *pVal);
+			[propput, id(45), helpstring("property Description")] HRESULT Description([in] BSTR newVal);
+			[propget, id(46), helpstring("property TemplateID")] HRESULT TemplateID([out, retval] BSTR *pVal);
+			[propput, id(46), helpstring("property TemplateID")] HRESULT TemplateID([in] BSTR newVal);
+			[propget, id(50), helpstring("property SDKMode")] HRESULT SDKMode([out, retval] BOOL *pVal);
+			[propput, id(50), helpstring("property SDKMode")] HRESULT SDKMode([in] BOOL newVal);
+		#endif	//  SHOW_TLB_METHODS
+	};
+	[
+		object,
+		uuid(A1777A91-27A6-11d5-85B6-269F99000000),
+		dual,
+		helpstring("ISetting Interface"),
+		pointer_default(unique)
+	]
+	interface ISetting : IDispatch
+	{
+		//#ifdef SHOW_TLB_METHODS
+
+		[propget, id(1), helpstring("property Rule")] HRESULT Rule([out, retval] long *pVal);
+		[propput, id(1), helpstring("property Rule")] HRESULT Rule([in] long newVal);
+		[propget, id(2), helpstring("property Period")] HRESULT Period([out, retval] long *pVal);
+		[propput, id(2), helpstring("property Period")] HRESULT Period([in] long newVal);
+		[propget, id(3), helpstring("property Value")] HRESULT Value([out, retval] BSTR *pVal);
+		[propput, id(3), helpstring("property Value")] HRESULT Value([in] BSTR newVal);
+		[propget, id(4), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propput, id(4), helpstring("property Name")] HRESULT Name([in] BSTR newVal);
+
+		//#endif	//  SHOW_TLB_METHODS
+	};
+	[
+		object,
+		uuid(A1777A92-27A6-11d5-85B6-269F99000000),
+		dual,
+		helpstring("ISettings Interface"),
+		pointer_default(unique)
+	]
+	interface ISettings : IDispatch
+	{
+		//#ifdef SHOW_TLB_METHODS
+
+		[propget, restricted, id(DISPID_NEWENUM), helpstring("property _NewEnum")] 
+		   HRESULT _NewEnum([out, retval] LPUNKNOWN *pVal);
+
+		[id(DISPID_VALUE), propget]
+		HRESULT Item(
+						[in] VARIANT Index, 
+						[out, retval] VARIANT* pVal);
+
+		[id(0x00000001), propget]
+		HRESULT Count([out, retval] long* pVal);
+
+
+		[id(0x00000002)]
+		HRESULT Add(
+						[in] BSTR bstrKey,
+						[in] long lIndex,
+						[in] long lRule,
+						[in] BSTR bstrValue,
+						[in] long lPeriod);
+
+    
+		[id(0x00000003)]
+		HRESULT Remove([in] VARIANT Index);
+
+		[id(0x00000004)]
+		HRESULT Clear();
+		[id(5), helpstring("method get_ItemCustom")] 
+		HRESULT get_ItemCustom([in] VARIANT Index, 	[out,retval] ISetting ** ppSetting);
+
+		//#endif	//  SHOW_TLB_METHODS
+	};
+	[
+		object,
+		uuid(8DE52EB1-28C9-11D5-85B9-A46552000000),
+		dual,
+		helpstring("IStatistic Interface"),
+		pointer_default(unique)
+	]
+	interface IStatistic : IDispatch
+	{
+		//#ifdef SHOW_TLB_METHODS
+
+		[propget, id(1), helpstring("property Type")] HRESULT Type([out, retval] long *pVal);
+		[propput, id(1), helpstring("property Type")] HRESULT Type([in] long newVal);
+		[propget, id(2), helpstring("property Quantity")] HRESULT Quantity([out, retval] long *pVal);
+		[propput, id(2), helpstring("property Quantity")] HRESULT Quantity([in] long newVal);
+		[propget, id(3), helpstring("property Name")] HRESULT Name([out, retval] BSTR *pVal);
+		[propput, id(3), helpstring("property Name")] HRESULT Name([in] BSTR newVal);
+
+		//#endif	//  SHOW_TLB_METHODS
+	};
+	[
+		object,
+		uuid(8DE52EB5-28C9-11D5-85B9-A46552000000),
+		dual,
+		helpstring("IStatistics Interface"),
+		pointer_default(unique)
+	]
+	interface IStatistics : IDispatch
+	{
+		//#ifdef SHOW_TLB_METHODS
+
+		[propget, restricted, id(DISPID_NEWENUM), helpstring("property _NewEnum")] 
+		HRESULT _NewEnum([out, retval] LPUNKNOWN *pVal);
+
+		[id(DISPID_VALUE), propget]
+		HRESULT Item(
+						[in] VARIANT Index, 
+						[out, retval] VARIANT* pVal);
+
+		[id(0x00000001), propget]
+		HRESULT Count([out, retval] long* pVal);
+
+		[id(0x00000004)]
+		HRESULT Reset();
+
+		[id(5), helpstring("method get_ItemCustom")] 
+		HRESULT get_ItemCustom([in] VARIANT Index, [out,retval] IStatistic** ppStatistic);
+
+		//#endif	//  SHOW_TLB_METHODS
+	};
+	[
+		object,
+		uuid(27506A61-712F-11D5-862D-C05E6D000000),
+		dual,
+		helpstring("IBrowserWrapper Interface"),
+		pointer_default(unique)
+	]
+	interface IBrowserWrapper : IDispatch
+	{
+		//#ifdef SHOW_TLB_METHODS
+
+		[id(1), helpstring("method Run")] HRESULT Run([in] BSTR bstrDataSource);
+		[id(2), helpstring("method GetDoc")] HRESULT GetDoc([out] VARIANT_BOOL* bLoaded, [out,retval] IDispatch ** pDispatch);
+		[id(3), helpstring("method Stop")] HRESULT Stop();
+
+		//#endif	//  SHOW_TLB_METHODS
+	};
+[
+	uuid(A1777A94-27A6-11d5-85B6-269F99000000),
+	version(1.0),
+	helpstring("WinBlitReaderMgr 1.0 Type Library")
+]
+library WINBLITREADERMANAGERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	#include "IDLConstants.h"
+	[
+		uuid(0E9E0E60-190E-11D5-859E-6CA415000000),
+		helpstring("WinBlitData Class")
+	]
+	coclass WinBlitData
+	{
+		[default] interface IWinBlitData;
+	};
+	[
+		uuid(70AA5212-27A9-11d5-85B6-269F99000000),
+		helpstring("WinBlitReader Class")
+	]
+	coclass WinBlitReader
+	{
+		[default] interface IWinBlitReader;
+	};
+	[
+		uuid(A1777A97-27A6-11d5-85B6-269F99000000),
+		helpstring("Setting Class")
+	]
+	coclass Setting
+	{
+		[default] interface ISetting;
+	};
+	[
+		uuid(A1777A98-27A6-11d5-85B6-269F99000000),
+		helpstring("Settings Class")
+	]
+	coclass Settings
+	{
+		[default] interface ISettings;
+	};
+	[
+		uuid(8DE52EB2-28C9-11D5-85B9-A46552000000),
+		helpstring("Statistic Class")
+	]
+	coclass Statistic
+	{
+		[default] interface IStatistic;
+	};
+	[
+		uuid(8DE52EB6-28C9-11D5-85B9-A46552000000),
+		helpstring("Statistics Class")
+	]
+	coclass Statistics
+	{
+		[default] interface IStatistics;
+	};
+	[
+		uuid(27506A62-712F-11D5-862D-C05E6D000000),
+		helpstring("BrowserWrapper Class")
+	]
+	coclass BrowserWrapper
+	{
+		[default] interface IBrowserWrapper;
+	};
+};

@@ -1,0 +1,39 @@
+// PatLic.idl : IDL source for PatLic.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (PatLic.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(BBF085F3-B413-11D5-8689-7C9ECC000000),
+		dual,
+		helpstring("ILicenseProvider Interface"),
+		pointer_default(unique)
+	]
+	interface ILicenseProvider : IDispatch
+	{
+		[id(1), helpstring("method GeneratePAK")] HRESULT GeneratePAK([in] BSTR bstrKey, [in] long lCode, [in,out] BSTR* bstrPAK);
+		[id(2), helpstring("method ValidatePAK")] HRESULT ValidatePAK([in] BSTR bstrKey, [in] long lCode, [in] BSTR bstrPAK, [out,retval] BOOL* bPAKValid);
+	};
+[
+	uuid(BBF085E7-B413-11D5-8689-7C9ECC000000),
+	version(1.0),
+	helpstring("PatLic 1.0 Type Library")
+]
+library PATLICLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(BBF085F4-B413-11D5-8689-7C9ECC000000),
+		helpstring("LicenseProvider Class")
+	]
+	coclass LicenseProvider
+	{
+		[default] interface ILicenseProvider;
+	};
+};

@@ -1,0 +1,25 @@
+HKCR
+{
+	ATLLogApp.BlitLog.1 = s 'BlitLog Class'
+	{
+		CLSID = s '{AE01A429-E4C6-4803-8B09-08BA375ECBB9}'
+	}
+	ATLLogApp.BlitLog = s 'BlitLog Class'
+	{
+		CLSID = s '{AE01A429-E4C6-4803-8B09-08BA375ECBB9}'
+		CurVer = s 'ATLLogApp.BlitLog.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {AE01A429-E4C6-4803-8B09-08BA375ECBB9}  = s 'BlitLog Class'
+		{
+			ProgID = s 'ATLLogApp.BlitLog.1'
+			VersionIndependentProgID = s 'ATLLogApp.BlitLog'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{553D5C86-BA12-421D-B827-8BBCC7DF0D37}'
+		}
+	}
+}

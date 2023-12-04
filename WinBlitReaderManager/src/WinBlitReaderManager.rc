@@ -1,0 +1,717 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+#include "WinBlitDataError.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "#include ""WinBlitDataError.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""WinBlitReaderManager.tlb""\r\n"
+    "CLICK sound start.wav\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,0,0
+ PRODUCTVERSION 2,4,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "WinBlit Speed Reader \0"
+            VALUE "CompanyName", "Pata-Sucia ltd\0"
+            VALUE "FileDescription", "WinBlitReaderManager Module\0"
+            VALUE "FileVersion", "2, 4, 0, 0\0"
+            VALUE "InternalName", "WinBlitReaderManager\0"
+            VALUE "LegalCopyright", "Copyright 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "WinBlitReaderManager.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WinBlit\0"
+            VALUE "ProductVersion", "2, 4, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "toolbar.bmp"
+IDB_WINBLITREADER       BITMAP  DISCARDABLE     "winblitre.bmp"
+IDB_PREVIEW_START       BITMAP  DISCARDABLE     "bitmap1.bmp"
+IDB_PREVIEW_STOP        BITMAP  DISCARDABLE     "bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_WINBLITREADER       REGISTRY DISCARDABLE    "WinBlitReader.rgs"
+IDR_SETTING             REGISTRY DISCARDABLE    "Setting.rgs"
+IDR_SETTINGS            REGISTRY DISCARDABLE    "Settings.rgs"
+IDR_STATISTIC           REGISTRY DISCARDABLE    "Statistic.rgs"
+IDR_STATISTICS          REGISTRY DISCARDABLE    "Statistics.rgs"
+IDR_WINBLITDATA         REGISTRY DISCARDABLE    "WinBlitData.rgs"
+IDR_BROWSERWRAPPER      REGISTRY DISCARDABLE    "BrowserWrapper.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_SETTINGS DIALOGEX 0, 0, 399, 209
+STYLE WS_POPUP | WS_DISABLED | WS_CAPTION
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Current Configuration",IDC_STATIC,7,7,384,90
+    LTEXT           "Configuration Name :",IDC_STATIC,9,19,67,11,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_CURRENTSETTING,77,18,174,46,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,0,
+                    HIDC_COMBO_CURRENTSETTING
+    LTEXT           "Configuration Type :",IDC_STATIC,9,40,63,11,
+                    SS_CENTERIMAGE
+    LTEXT           "",IDC_TEMPLATETYPE,77,40,98,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Static",IDC_TEMPLATEDESCRIPTION_STATIC,191,40,180,20
+    LTEXT           "Fixation Width Type :",IDC_STATIC,9,66,67,11,
+                    SS_CENTERIMAGE
+    LTEXT           "",IDC_FIXWIDTHTYPE_STATIC,77,63,98,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Static",IDC_FIXWIDTHDESCRIPTION_STATIC,189,63,194,29
+    PUSHBUTTON      "&Remove Configuration",IDC_REMOVECONFIGURATIONBUTTON,
+                    253,17,74,14,0,0,HIDC_REMOVECONFIGURATIONBUTTON
+    PUSHBUTTON      "&Add Configuration",IDC_ADDCONFIGURATIONBUTTON,328,17,
+                    60,14,0,0,HIDC_ADDCONFIGURATIONBUTTON
+    PUSHBUTTON      "",IDC_PREVIEWSTART_BUTTON,13,113,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTART_BUTTON
+    PUSHBUTTON      "",IDC_PREVIEWSTOP_BUTTON,13,128,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTOP_BUTTON
+    GROUPBOX        "Preview (Click right arrow to preview changes)",
+                    IDC_STATIC,7,101,384,105
+    CONTROL         "",IDC_STATIC_WINBLIT,"Static",SS_BLACKFRAME,33,110,352,
+                    90,0,HIDC_STATIC_WINBLIT
+END
+
+IDD_PROPPAGE_DISPLAY DIALOGEX 0, 0, 397, 214
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Fonts and Colours"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Fonts and Colors",IDC_STATIC,6,7,384,91
+    PUSHBUTTON      "Back Color",IDC_BACKCOLOR,31,20,83,14,0,0,
+                    HIDC_BACKCOLOR
+    PUSHBUTTON      "Screen Fill Color",IDC_SCREENFILLCOLOR,31,44,83,14,0,0,
+                    HIDC_SCREENFILLCOLOR
+    PUSHBUTTON      "Screen Text Color",IDC_SCREENTEXTCOLOR,32,68,83,14,0,0,
+                    HIDC_SCREENTEXTCOLOR
+    PUSHBUTTON      "Fixation Fill Color",IDC_FIXATIONFILLCOLOR,131,44,83,14,
+                    0,0,HIDC_FIXATIONFILLCOLOR
+    PUSHBUTTON      "FixationText Color",IDC_FIXATIONTEXTCOLOR,131,69,83,14,
+                    0,0,HIDC_FIXATIONTEXTCOLOR
+    PUSHBUTTON      "Font",IDC_FONT,221,69,83,14,0,0,HIDC_FONT
+    GROUPBOX        "Preview (Click right arrow to preview changes)",
+                    IDC_STATIC,7,101,384,105
+    PUSHBUTTON      "",IDC_PREVIEWSTART_BUTTON,13,113,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTART_BUTTON
+    PUSHBUTTON      "",IDC_PREVIEWSTOP_BUTTON,13,128,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTOP_BUTTON
+    CONTROL         "",IDC_STATIC_WINBLIT,"Static",SS_BLACKFRAME,33,110,352,
+                    90,0,HIDC_STATIC_WINBLIT
+END
+
+IDD_PROPPAGE_RULES DIALOGEX 0, 0, 335, 159
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Breakpoints"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Add Breakpoint",IDC_ADDBREAKPOINTBUTTON,43,15,60,14,0,
+                    0,HIDC_ADDBREAKPOINTBUTTON
+    PUSHBUTTON      "&Remove Breakpoint",IDC_REMOVEBREAKPOINTBUTTON,103,15,
+                    74,14,0,0,HIDC_REMOVEBREAKPOINTBUTTON
+    PUSHBUTTON      "&Modify Breakpoint",IDC_MODBREAKPOINTBUTTON,177,15,65,
+                    14,0,0,HIDC_MODBREAKPOINTBUTTON
+    CONTROL         "List2",IDC_BREAKPOINTS_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,13,34,267,102,0,
+                    HIDC_BREAKPOINTS_LIST
+END
+
+IDD_PROPPAGE_SPEED DIALOGEX 0, 0, 404, 214
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Speed"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider2",IDC_SPEED_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,17,15,140,15,0,
+                    HIDC_SPEED_SLIDER
+    CONTROL         "Slider1",IDC_FIXTIME_SLIDER,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,17,48,18,
+                    47,0,HIDC_FIXTIME_SLIDER
+    EDITTEXT        IDC_HIGHLIGHTEDIT,169,52,23,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER,WS_EX_RIGHT,HIDC_HIGHLIGHTEDIT
+    GROUPBOX        "Speed",IDC_STATIC,7,7,381,31
+    GROUPBOX        "Fixation time details",IDC_DISPLAYBOXSTATIC,7,38,382,61
+    LTEXT           "milliseconds",IDC_DISPLAYSTATIC,124,52,38,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Highlight time:",IDC_STATIC,47,52,56,12,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_STATIC_COFFTYPE,47,78,56,12,SS_CENTERIMAGE
+    LTEXT           "milliseconds",IDC_STATIC,124,78,38,12,SS_CENTERIMAGE
+    RTEXT           "99",IDC_STATIC_COFFTIME,101,78,17,12,SS_SUNKEN
+    RTEXT           "99",IDC_STATIC_HIGHLIGHTTIME,100,52,18,12,SS_SUNKEN
+    RTEXT           "99",IDC_STATIC_COFFVALUE,169,78,23,12,SS_SUNKEN
+    LTEXT           "percent",IDC_STATIC,198,52,52,12,SS_CENTERIMAGE
+    LTEXT           "percent",IDC_STATIC,198,78,52,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SPEED_EDIT,169,16,25,12,ES_AUTOHSCROLL
+    LTEXT           "fixations per minute",IDC_STATIC,198,18,61,8,
+                    SS_CENTERIMAGE
+    RTEXT           "99",IDC_FIXTIMESTATIC,264,17,23,12,SS_SUNKEN
+    PUSHBUTTON      "",IDC_PREVIEWSTART_BUTTON,13,113,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTART_BUTTON
+    PUSHBUTTON      "",IDC_PREVIEWSTOP_BUTTON,13,128,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTOP_BUTTON
+    GROUPBOX        "Preview (Click right arrow to preview changes)",
+                    IDC_STATIC,7,101,384,105
+    CONTROL         "",IDC_STATIC_WINBLIT,"Static",SS_BLACKFRAME,33,110,352,
+                    90,0,HIDC_STATIC_WINBLIT
+    LTEXT           "milliseconds per fixation",IDC_STATIC,291,18,93,8
+END
+
+IDD_ADDSETTING_DIALOG DIALOGEX 0, 0, 361, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Configuration Type :",IDC_STATIC,18,16,70,12,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_TEMPLATE_COMBO,111,16,161,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,0,HIDC_TEMPLATE_COMBO
+    LTEXT           "Static",IDC_TEMPLATEDESCRIPTION_STATIC,111,42,207,21
+    LTEXT           "Configuration Name :",IDC_STATIC,18,81,73,15,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CONFIGNAME_EDIT,111,81,160,15,ES_AUTOHSCROLL,0,
+                    HIDC_CONFIGNAME_EDIT
+    LTEXT           "Fixation Width Type :",IDC_STATIC,18,119,71,8
+    COMBOBOX        IDC_FIXWIDTHTYPE_COMBO,112,116,54,55,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,0,
+                    HIDC_FIXWIDTHTYPE_COMBO
+    LTEXT           "Static",IDC_FIXWIDTHDESCRIPTION_STATIC,113,136,202,35
+    DEFPUSHBUTTON   "OK",IDOK,304,4,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,304,24,50,14
+END
+
+IDD_ADDRULE_DIALOG DIALOGEX 0, 0, 339, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Breakpoint"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name :",IDC_STATIC,24,26,24,8
+    EDITTEXT        IDC_NAME_EDIT,83,23,117,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Text :",IDC_STATIC,24,53,26,8
+    EDITTEXT        IDC_TEXT_EDIT,83,50,120,14,ES_AUTOHSCROLL,0,
+                    HIDC_TEXT_EDIT
+    LTEXT           "",IDC_STATIC,19,68,8,8
+    LTEXT           "Type :",IDC_STATIC,24,78,21,14,SS_CENTERIMAGE
+    CONTROL         "Pause At Text",IDC_PAUSE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,83,78,61,14,0,
+                    HIDC_PAUSE_RADIO
+    CONTROL         "Delay at Text for",IDC_DELAY_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,167,78,68,14,0,HIDC_DELAY_RADIO
+    EDITTEXT        IDC_PERIOD_EDIT,242,78,31,14,ES_RIGHT | ES_AUTOHSCROLL,0,
+                    HIDC_PERIOD_EDIT
+    LTEXT           "seconds",IDC_STATIC,281,80,51,14
+    DEFPUSHBUTTON   "OK",IDOK,282,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,282,24,50,14
+END
+
+IDD_REGDIALOG DIALOGEX 0, 0, 319, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registration Form"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_REGNAME,89,51,127,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_REGNAME
+    EDITTEXT        IDC_EDIT_REGID,89,84,175,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_REGID
+    DEFPUSHBUTTON   "OK",IDOK,262,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,262,24,50,14
+    LTEXT           "Name :",IDC_STATIC_NAME,17,53,24,8
+    LTEXT           "Registration ID :",IDC_STATIC_REGID,17,86,52,8
+    LTEXT           "If you have have paid  for a license for the product fill in the details below ",
+                    IDC_STATIC_REGTEXT,18,16,194,25
+END
+
+IDD_SPEED_DIALOG DIALOGEX 0, 0, 306, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Speed"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,249,9,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,29,50,14
+    CONTROL         "Slider2",IDC_SPEED_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,10,17,120,15,0,
+                    HIDC_SPEED_SLIDER
+    EDITTEXT        IDC_SPEED_EDIT,137,17,25,15,ES_AUTOHSCROLL
+    LTEXT           "fixations per minute",IDC_STATIC,171,17,61,15,
+                    SS_CENTERIMAGE
+    GROUPBOX        "Adjust speed",IDC_STATIC,7,7,233,36
+END
+
+IDD_PROPPAGE_FIXATIONS DIALOGEX 0, 0, 398, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fixation Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Fixation Details",IDC_STATIC,7,7,383,90
+    LTEXT           "Fixation Height :",IDC_STATIC,18,26,65,13,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_FIXATIONHEIGHTEDIT,88,26,26,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER,0,HIDC_FIXATIONHEIGHTEDIT
+    LTEXT           "rows",IDC_STATICROW,121,26,123,13,SS_CENTERIMAGE
+    LTEXT           "Fixation Width :",IDC_STATIC,18,48,59,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIXATIONWIDTHEDIT,86,48,28,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER,0,HIDC_FIXATIONWIDTHEDIT
+    LTEXT           "columns",IDC_STATIC_CURSORWIDTH,121,48,127,13,
+                    SS_CENTERIMAGE
+    LTEXT           "Leave Fixations Highlighted :",
+                    IDC_LEAVEHIGHLIGHTEDSTATIC,256,26,96,13,SS_CENTERIMAGE
+    CONTROL         "",IDC_LEAVEHIGHLIGHTEDCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,358,26,16,13,0,HIDC_LEAVEHIGHLIGHTEDCHECK
+    LTEXT           "Click sound per fixation :",IDC_SOUNDCLICKSTATIC,257,48,
+                    96,13,SS_CENTERIMAGE
+    CONTROL         "",IDC_SOUNDCLICKCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,357,48,16,13,0,HIDC_SOUNDCLICKCHECK
+    GROUPBOX        "Preview (Click right arrow to preview changes)",
+                    IDC_STATIC,7,101,384,105
+    PUSHBUTTON      "",IDC_PREVIEWSTART_BUTTON,13,113,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTART_BUTTON
+    PUSHBUTTON      "",IDC_PREVIEWSTOP_BUTTON,13,128,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTOP_BUTTON
+    CONTROL         "",IDC_STATIC_WINBLIT,"Static",SS_BLACKFRAME,33,110,352,
+                    90,0,HIDC_STATIC_WINBLIT
+END
+
+IDD_ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 205, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About "
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,148,76,50,14
+    CONTROL         101,IDC_STATIC,"Static",SS_BITMAP,96,16,11,9
+    LTEXT           "ProductName",IDC_ABOUT_FILEDESCRIPTION,18,45,80,8
+    RTEXT           "ProductVersion",IDC_ABOUT_PRODUCTVERSION,153,44,39,8
+    LTEXT           "LegalCopyright",IDC_ABOUT_LEGALCOPYRIGHT,18,58,168,8
+    LTEXT           "Version ",IDC_ABOUT_VERSION,114,44,28,8
+    LTEXT           "CompanyName",IDC_ABOUT_COMPANYNAME,18,31,118,8
+    GROUPBOX        "",IDC_STATIC,7,7,191,66
+END
+
+IDD_PROPPAGE_GENERAL DIALOGEX 0, 0, 398, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_SHOWTOOLBARCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,20,16,13,0,HIDC_SHOWTOOLBARCHECK
+    GROUPBOX        "Display Details",IDC_STATIC,7,4,166,87
+    LTEXT           "Show Toolbar :",IDC_SHOWTOOLBARSTATIC,30,20,96,13,
+                    SS_CENTERIMAGE
+    LTEXT           "Show Trackbar :",IDC_SHOWTRACKBARSTATIC,30,37,96,13,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_SHOWTRACKBARCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,37,16,13,0,HIDC_SHOWTRACKBARCHECK
+    LTEXT           "Show Statusbar :",IDC_SHOWSTATUSBARSTATIC,30,54,96,13,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_SHOWSTATUSBARCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,54,16,13,0,HIDC_SHOWSTATUSBARCHECK
+    LTEXT           "Show Metafile :",IDC_SHOWMETAFILESTATIC,30,71,96,13,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_SHOWMETAFILECHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,132,71,16,13,0,HIDC_SHOWMETAFILECHECK
+    GROUPBOX        "AutoStart Speedreading",IDC_STATIC,7,101,166,87
+    LTEXT           "AutoStart BlitPad :",IDC_BLITPADSTATIC,29,115,96,13,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_AUTOSTART_BLITPADCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,115,16,13,0,HIDC_AUTOSTART_BLITPADCHECK
+    LTEXT           "AutoStart Internet Explorer :",IDC_IESTATIC,29,132,96,
+                    13,SS_CENTERIMAGE
+    CONTROL         "",IDC_AUTOSTART_IECHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,132,16,13,0,HIDC_AUTOSTART_IECHECK
+    CONTROL         "",IDC_AUTOSTART_OUTLOOKCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,149,16,13,0,HIDC_AUTOSTART_OUTLOOKCHECK
+    LTEXT           "AutoStart Outlook :",IDC_SHOWSTATUSBARSTATIC2,29,149,96,
+                    13,SS_CENTERIMAGE
+    CONTROL         "",IDC_AUTOSTART_WORDCHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,166,16,13,0,HIDC_AUTOSTART_WORDCHECK
+    LTEXT           "AutoStart Word:",IDC_SHOWMETAFILESTATIC2,29,166,96,13,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "Press to clear Statistics",IDC_CLEARSTATISTICS,271,17,
+                    94,14,0,0,HIDC_CLEARSTATISTICS
+END
+
+IDD_PROPPAGE_SOUND DIALOGEX 0, 0, 398, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sound"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_SOUND,70,32,161,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_SOUND
+    LTEXT           "Select Sound :",IDC_STATIC,14,34,48,10
+    LTEXT           "Further description to go here",IDC_STATIC,247,33,93,27
+    PUSHBUTTON      "",IDC_PREVIEWSTART_BUTTON,13,113,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTART_BUTTON
+    PUSHBUTTON      "",IDC_PREVIEWSTOP_BUTTON,13,128,15,14,BS_BITMAP,0,
+                    HIDC_PREVIEWSTOP_BUTTON
+    GROUPBOX        "Preview (Click right arrow to preview changes)",
+                    IDC_STATIC,7,101,384,105
+    CONTROL         "",IDC_STATIC_WINBLIT,"Static",SS_BLACKFRAME,33,110,352,
+                    90,0,HIDC_STATIC_WINBLIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+        HORZGUIDE, 105
+    END
+
+    IDD_PROPPAGE_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+        HORZGUIDE, 105
+    END
+
+    IDD_PROPPAGE_RULES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_PROPPAGE_SPEED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+        HORZGUIDE, 105
+    END
+
+    IDD_ADDSETTING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_ADDRULE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_REGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_SPEED_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_PROPPAGE_FIXATIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+        HORZGUIDE, 105
+    END
+
+    IDD_ABOUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_PROPPAGE_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+    END
+
+    IDD_PROPPAGE_SOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 391
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup Menu"
+    BEGIN
+        MENUITEM "&Start/Stop",                 ID_STARTSTOPTOGGLE
+        MENUITEM "&Pause",                      ID_PAUSEBUTTON
+        MENUITEM "Spee&d",                      ID_SPEED
+        MENUITEM SEPARATOR
+        MENUITEM "Show Too&lbar",               ID_SHOWCONTROLS, CHECKED
+        MENUITEM "Show Track&Bar",              ID_SHOWTRACKBAR, CHECKED
+        MENUITEM "Show Stat&usBar",             ID_SHOWSTATUSBAR, CHECKED
+        MENUITEM "Show &Metafile",              ID_SHOWMETAFILE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "&Clear Statistics",           ID_CLEARSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Help",                       ID_HELPCALLED
+        MENUITEM "&About",                      ID_ABOUT_BOX
+        MENUITEM SEPARATOR
+        MENUITEM "S&ettings",                   ID_SETTINGS
+    END
+END
+
+IDR_CONFIGMENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "PopupMenu",                   65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_STARTBUTTON
+    BUTTON      ID_PAUSEBUTTON
+    BUTTON      ID_STOPBUTTON
+    BUTTON      ID_SPEED
+    BUTTON      ID_SETTINGS
+    BUTTON      ID_SWITCHCONFIG
+    BUTTON      ID_HELPCALLED
+    BUTTON      ID_REGISTER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_TOOLBAR ACCELERATORS DISCARDABLE 
+BEGIN
+    "E",            ID_SETTINGS,            VIRTKEY, NOINVERT
+    "P",            ID_PAUSEBUTTON,         VIRTKEY, NOINVERT
+    "S",            ID_STARTSTOPTOGGLE,     VIRTKEY, NOINVERT
+    VK_DOWN,        ID_LINEDOWN,            VIRTKEY, NOINVERT
+    VK_DOWN,        ID_SLOWER,              VIRTKEY, CONTROL, NOINVERT
+    VK_END,         ID_BOTTOM,              VIRTKEY, CONTROL, NOINVERT
+    VK_HOME,        ID_TOP,                 VIRTKEY, CONTROL, NOINVERT
+    VK_NEXT,        ID_PAGEDOWN,            VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_PAGEUP,              VIRTKEY, NOINVERT
+    VK_SPACE,       ID_STARTSTOPTOGGLE,     VIRTKEY, NOINVERT
+    VK_SPACE,       ID_PAUSEBUTTON,         VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_LINEUP,              VIRTKEY, NOINVERT
+    VK_UP,          ID_FASTER,              VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "WinBlitReaderManager"
+    IDS_SETTING1            "1 -  Static Cursor"
+    IDS_TRACKBARWINDOW_DESC "TrackBarWindow Class"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELPCALLED           "View Help contents"
+    ID_REGISTER             "Register WinBlit"
+    ID_SWITCHCONFIG         "Change Configuration"
+    ID_SPEED                "Adjust speed"
+    ID_PAGEUP               "Page up"
+    ID_LINEDOWN             "Line Down"
+    ID_LINEUP               "Line up"
+    ID_PAGEDOWN             "Page Down"
+    ID_ABOUT_BOX            "Show about box"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OUTOFMEMORY         "Could not allocate memory"
+    IDS_DATASOURCE_EMPTY    "Data source is empty"
+    IDS_OPENING_DATASOURCE  "Could not open data source"
+    IDS_OPENING_STREAM      "Could not open a stream to the data source"
+    IDS_GET_DATA            "GetData failed"
+    IDS_INVALID_DATASOURCE  "Data Source is invalid"
+    IDS_INVALID_READYSTATE  "Invalid ready state on HTML data source"
+    IDS_ALL_COLLECTION      "Could not open data collection"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROGID_FROM_CLSID   "Could not extract ProgId from CLSID"
+    IDS_COCREATE            "Error occurred cocreating object"
+    IDS_GETDOCUMENTS        "Error occurred accessing documents"
+    IDS_OPENDOCUMENT        "Error occured opening document"
+    IDS_GETCONTENT          "Error occured extracting data content from document"
+    IDS_GETTEXT             "Error occured extracting text from document. "
+    IDS_GETPARAGRAPHS       "Error occured accessing documents collection"
+    IDS_GETCOUNT            "Error occurred counting document paragraphjs"
+    IDS_GETDATA             "Error occurred opening data source"
+    IDS_GETITEM             "Error occured accessing an item in the document"
+    IDS_TAGNAME             "Error occured accessing tags"
+    IDS_INNERTEXT           "Error occured opening data source. "
+    IDS_GETRANGE            "Error occured on range method"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STARTSTOPTOGGLE      "Start reading (or stop if currently reading)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STARTBUTTON          "Start speed reading"
+    ID_PAUSEBUTTON          "Pause speed reading (or resume speed reading if currently paused)"
+    ID_STOPBUTTON           "Stop speed reading"
+    ID_SETTINGS             "Change Settings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WORDSPERMINUTE       "Words per minute: 99999999"
+    ID_TOTALWORDS           "Words : 99999999"
+    ID_READTIME             "Time (secs) : 99999"
+    IDS_MBXREG              "Trial Period expired - Please register product to continue use \n See help for instructions on how to register"
+    IDS_MBXERROR            "Error"
+    IDS_MBXNEWFULL          "The registration ID has expired for this version of WinBlit . \n Please download the latest version from the website and e-mail support@winblit.com to obtain an updated registration key.  "
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "WinBlitReaderManager.tlb"
+CLICK sound start.wav
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

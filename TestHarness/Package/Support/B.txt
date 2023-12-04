@@ -1,0 +1,38 @@
+0000000000 11111111111 222222222 333333333333 444444444444 55555555555 666666666 77777777777 8888888 99999999999999 0000000000000 aaaaaaaaaaaaa bbbbbbbbbbbbbbbbb ccccccccccccc dddddddddddd eeeeeeeeeeeee ffffffffffff gggggggggggggggg hhhhhhhhhhhhhhh
+he MSDN Library What's New page contains a comprehensive list of all new and revised content for the October 2001 release. Continue reading this page for highlights of new content in the Library.
+Coming in January 2002 The MSDN Library is getting a new look. With the release of the January 2002 Library, you will see a completely new design that will give you the ability to find what you need as quickly and easily as possible. For a preview, see Coming in January 2002: A New MSDN Library. 
+Microsoft Windows DDK Documentation This Library release contains all the newest information on the Microsoft Windows Driver Development Kit. This documentation will guide you through the planning and decision-making process involved in developing a Windows device driver for Windows XP, Windows 2000, or Windows Me operating systems. Both new and experienced driver writers will find this information very useful. 
+Microsoft Content Management Server 2001 Microsoft Content Management Server 2001 is the enterprise Web content management system that enables companies to quickly and efficiently build, deploy, and maintain highly dynamic Internet, intranet, and extranet Web sites. Documentation in this version of the Library includes the MSCMS 2001 Site Programmer's Guide, the Publishing API Reference, and the Framework API Reference. 
+
+Microsoft SharePoint Team Services SDK Documentation
+
+SharePoint Team Services technology allows teams to create a quick Web site for sharing information such as documents, calendars, announcements, and other postings. Web sites created with SharePoint Team Services are easy to customize and manage—even for those who have never created a Web site before. This version of the MSDN Library contains all the SDK documentation needed to build solutions with SharePoint Team Services. 
+
+Microsoft Visio Documentation
+
+Microsoft Visio 2002 provides a powerful single platform for your custom drawing solutions. New ShapeSheet cells and Automation objects, properties, methods, and events give you more options for defining the behavior of the elements in your solutions. In this Library release, you will find the Microsoft Visio Automation Reference and the Microsoft Visio ShapeSheet Reference, as well as the XML Reference for Microsoft Visio.
+
+Updated: The Knowledge Base 
+
+The Developer edition of the Microsoft Knowledge Base has been updated for the October 2001 release of the MSDN Library.
+
+Technical Articles
+
+The October 2001 release of the MSDN Library contains new Technical Articles on Office XP, Windows XP, and the latest Enterprise server, Microsoft Content Management Server 2001. Also see the MSDN Technical Articles node for the newest documentation on Microsoft .NET, Visual FoxPro, Web Services, and more. 
+
+MSDN Magazine
+
+The entire contents of MSDN Magazine (formerly Microsoft Systems Journal and Microsoft Internet Developer) are included in the Library. In this release, the May, June, and July editions are new. Altogether, MSDN is publishing almost 100 new developer periodical articles this quarter. And if you have misplaced your hard copy of the MSDN News, you can find it here also.
+
+See all of what's new...   
+ 
+Look here for an introduction to our ever-expanding MSDN Online Web site. At MSDN Online, you can find the entire Library, which is updated daily. Our online magazine, Voices, brings you a variety of columns and articles that address a broad range of developer topics. Plus, you will find the latest developer news, information on MSDN Training, MSDN events and seminars, MSDN subscriptions, and many other developer resources.  
+
+Read more  
+ 
+The DVD-ROM version of the MSDN Library is the most convenient way to access the entire contents of the Library, with no disc swapping. In addition, the October 2001 edition of the MSDN Library on DVD contains more than 5 gigabytes of multimedia content, including three new .NET Shows, five Support WebCasts, and more than 50 new seminars from Multimedia Central, including Building a .NET Application and information on the best ways to upgrade your Visual Basic 6.0 projects to Visual Basic .NET. 
+
+Read more  
+ 
+
+© 2001 Microsoft 

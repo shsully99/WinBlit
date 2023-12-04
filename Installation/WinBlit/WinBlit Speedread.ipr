@@ -1,0 +1,55 @@
+[Language]
+LanguageSupport0=0009
+
+[OperatingSystem]
+OSSupport=0000000000010010
+
+[Data]
+CurrentMedia=New Media
+CurrentComponentDef=Default.cdf
+ProductName=WinBlit
+set_mifserial=
+DevEnvironment=Microsoft Visual C++ 6
+AppExe=
+set_dlldebug=No
+EmailAddresss=
+Instructions=Instructions.txt
+set_testmode=No
+set_mif=No
+SummaryText=
+Department=
+HomeURL=
+Author=
+Type=Internet Application
+InstallRoot=C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\Installation\WinBlit
+Version=2.4
+InstallationGUID=5556611f-bbff-11d5-8698-acb18f000000
+set_level=Level 3
+CurrentFileGroupDef=Default.fdf
+Notes=Notes.txt
+set_maxerr=50
+set_args=
+set_miffile=Status.mif
+set_dllcmdline=
+Copyright=
+set_warnaserr=No
+CurrentPlatform=
+Category=Accounting
+set_preproc=
+CurrentLanguage=English
+CompanyName=Pata-Sucia ltd
+Description=Description.txt
+set_maxwarn=50
+set_crc=Yes
+set_compileb4build=No
+
+[MediaInfo]
+mediadata0=New Media/Media\New Media
+
+[General]
+PassData=
+ReadOnly=N
+Type=INSTALLMAIN
+Version=1.10.000
+PassOn=N
+

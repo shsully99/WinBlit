@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2 
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+
+End Sub
+</SCRIPT>
+
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<TABLE style="WIDTH: 580px; HEIGHT: 160px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  
+  <TR>
+    <TD>
+<P>There are many settings you can vary in WinBlit - 
+      Text Size, Fonts, Colours and speed and Fixation size (i.e. the amount of text 
+      that is flashed to you at any one time) are the most 
+      important. These are of course all customisable to suit your own 
+      requirements.</P>
+      <P>To view or change the current settings of WinBlit 
+      either click the <IMG height=15 
+      alt="" src="settings.bmp" width=18> 
+      &nbsp;icon on the toolbar&nbsp;OR select <STRONG>Settings</STRONG>    from 
+      the context menu&nbsp;OR use the <STRONG>"E"</STRONG> shortcut key. </P>
+      <P>        
+                
+       The first tab is called Configuration and will be 
+      discussed shortly.&nbsp;Have a look at the other&nbsp;tabs on the dialog 
+      and experiment with them. You can find out exactly what all of the 
+      Settings do by looking at the help file in more detail but more 
+      importantly you can watch the effect of changing anything in the Settings 
+      by the Preview screen at the bottom. To see how a change in the Settings 
+      affects speed reading you can always click the&nbsp;<IMG height=15 
+      alt="" src="play.bmp" width=17> button that appears to the top right of the Preview 
+      screen on any of the tabs.<STRONG> </STRONG>Our users 
+      often find that it only takes a minor change in&nbsp;Settings to "suddenly 
+      feel comfortable" using WinBlit. The Settings dialog box is a good place 
+      to experiment with different Settings until you get there. 
+  </P></TD></TR></TABLE>
+</BODY>
+</HTML>

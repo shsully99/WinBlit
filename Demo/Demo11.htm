@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+
+End Sub
+</SCRIPT>
+
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<TABLE style="WIDTH: 580px; HEIGHT: 160px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  
+  <TR>
+    <TD>
+      <P>We would like to mention a&nbsp;few &nbsp;features our users have found 
+      particularly helpful before taking our leave. </P>
+      <P>1<STRONG>)&nbsp;&nbsp; "Fast forward and 
+      reverse".&nbsp; </STRONG>     Set the current 
+      Configuration of WinBlit to "RSVP Sample2". This configuration's settings 
+      mean that a fixation is the whole screen width. Click anywhere in the 
+      WinBlit Window and hit the down arrow key. You can rapidly scan through 
+      the document pacing your speed reading manually. You can fast reverse of 
+      course by using the up arrow. </P>
+      <P>2<STRONG>)&nbsp;&nbsp;"Metafile".</STRONG> From the context menu select "Show Metafile". As you 
+      can&nbsp;see you can toggle&nbsp;whether this graphic representation&nbsp;of the&nbsp;current 
+      page of text appears or not.</P>
+      <P><STRONG>3)&nbsp;&nbsp;"Breakpoints".</STRONG> Breakpoints (which you can find on the 
+      Settings dialog) allow further fine tuning of your speed reading by 
+      allowing you pause or delay your speed reading at key words in the document 
+      or at punctuation marks.
+      </P>
+      <P>There is a lot more that WinBlit can do and once you have downloaded 
+      WinBlit we recommend going through the help file and experimenting a bit 
+      more to&nbsp;learn its full finctionality . You can also see the help file 
+      contents online by pointing your browser to <A 
+      href="http://www.winblit.com/help.htm">www.winblit.com/Help.htm</A>. </P>
+      <P>We hope that you enjoy using WinBlit and that it helps you to be more 
+      productive in your everyday working life. We welcome any suggestions which 
+      you have for improving the reading experience of Windows users. </P>
+      <P>A free 30-day trial of WinBlit is available to anyone who wishes to try 
+      the product. You can obtain this by pointing your browser to <A 
+      href="http://www.winblit.com/Download.htm">www.winblit.com/download.htm</A></P>
+      </TD>
+      </TR>
+      </TABLE>
+<P>               
+     &nbsp;</P>
+      </BODY>
+</HTML>

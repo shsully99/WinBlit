@@ -1,0 +1,69 @@
+HKEY_CURRENT_USER
+{
+	NoRemove 'Software'
+	{
+		NoRemove 'Microsoft'
+		{
+			NoRemove 'Windows'
+			{
+				NoRemove 'CurrentVersion'
+				{
+					NoRemove 'Explorer'
+					{
+						NoRemove 'Discardable'
+						{
+							NoRemove 'PostSetup'
+							{
+								NoRemove 'Component Categories'
+								{
+									NoRemove '{00021494-0000-0000-C000-000000000046}'
+									{
+										ForceRemove 'Enum'
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+HKEY_CURRENT_USER
+{
+	NoRemove 'Software'
+	{
+		NoRemove 'Microsoft'
+		{
+			NoRemove 'Windows'
+			{
+				NoRemove 'CurrentVersion'
+				{
+					NoRemove 'Explorer'
+					{
+						NoRemove 'Discardable'
+						{
+							NoRemove 'PostSetup'
+							{
+								NoRemove 'Component Categories'
+								{
+									NoRemove '{00021493-0000-0000-C000-000000000046}'
+									{
+										ForceRemove 'Enum'
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

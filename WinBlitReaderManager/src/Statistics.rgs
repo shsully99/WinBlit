@@ -1,0 +1,26 @@
+HKCR
+{
+	WinBlitReaderManager.Statistics.1 = s 'Statistics Class'
+	{
+		CLSID = s '{8DE52EB6-28C9-11D5-85B9-A46552000000}'
+	}
+	WinBlitReaderManager.Statistics = s 'Statistics Class'
+	{
+		CLSID = s '{8DE52EB6-28C9-11D5-85B9-A46552000000}'
+		CurVer = s 'WinBlitReaderManager.Statistics.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {8DE52EB6-28C9-11D5-85B9-A46552000000} = s 'Statistics Class'
+		{
+			ProgID = s 'WinBlitReaderManager.Statistics.1'
+			VersionIndependentProgID = s 'WinBlitReaderManager.Statistics'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A1777A94-27A6-11d5-85B6-269F99000000}'
+		}
+	}
+}

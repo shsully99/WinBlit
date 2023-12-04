@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+	
+End Sub
+</SCRIPT>
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<TABLE style="WIDTH: 580px; HEIGHT: 160px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  
+  <TR>
+    <TD>          
+      
+<P><STRONG>Starting Speedreading</STRONG>     </P>          
+      
+<P>Either Click the <IMG height=15 
+      alt="" src="play.bmp" width=17>&nbsp; icon on the toolbar&nbsp;<FONT 
+      color=black>OR</FONT> 
+           Select <STRONG>Start/Stop</STRONG> from the context menu&nbsp; <FONT 
+      style="BACKGROUND-COLOR: #ffff99">OR</FONT>  
+         &nbsp;press &nbsp;the<STRONG> "S"</STRONG>  shortcut key&nbsp;OR&nbsp;press the spacebar.</P>
+<P><STRONG>Pausing Speedreading</STRONG>       </P>
+      <P>Either Click the&nbsp;<IMG 
+      style="LEFT: 120px; TOP: 148px" height=15 
+      alt="" src="Pause.bmp" width=19> 
+      icon on the toolbar&nbsp;OR &nbsp;Select&nbsp;<STRONG> Pause</STRONG>  
+      from the context menu&nbsp;OR&nbsp;&nbsp;press the <STRONG>"P"</STRONG> shortcut key OR press&nbsp;the control key 
+      and the spacebar simultaneously.</P>
+      <P>As on&nbsp;a media player Pause is effectively a toggle betweens 
+      playing and not playing (in our case reading and not reading).</P>
+<P><STRONG>Stopping&nbsp;&nbsp;Speedreading</STRONG>     
+               </P>
+<P>Either Click the&nbsp;<IMG height=14 
+      alt="" src="stop.bmp" width=18> 
+      icon on the toolbar&nbsp;OR 
+      &nbsp;Select&nbsp;&nbsp;<STRONG>Start/Stop</STRONG>  from the 
+      context menu&nbsp;OR&nbsp;&nbsp;press the <STRONG>"S"</STRONG>     
+          shortcut key OR press the spacebar.</P>
+      <P><STRONG>Changing Reading Speed </STRONG></P>
+<P>Either Click the <IMG 
+      style="LEFT: 98px; TOP: 380px" alt="" 
+      src="speed.bmp">&nbsp;icon on the toolbar OR press &lt;CTRL&gt; and Up arrow to read faster OR 
+      &lt;CTRL&gt; and Down arrow to read slower.</P>
+      <P>There are&nbsp;many&nbsp;other functions&nbsp;and features you can 
+      learn by reading through the help file&nbsp;but you've just learnt the 
+      most important ones!</P></TD></TR></TABLE>
+<P>&nbsp;</P>
+
+</BODY>
+</HTML>

@@ -1,0 +1,4 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Exchange\Client\Extensions]
+"WinBlitExtension"="4.0;c:\\WINNT\\SYSTEM32\\WinBlitExchangeExtension.dll;1;01111111111110;1100000;"

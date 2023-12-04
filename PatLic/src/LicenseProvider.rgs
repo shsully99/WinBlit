@@ -1,0 +1,26 @@
+HKCR
+{
+	PatLic.LicenseProvider.1 = s 'LicenseProvider Class'
+	{
+		CLSID = s '{BBF085F4-B413-11D5-8689-7C9ECC000000}'
+	}
+	PatLic.LicenseProvider = s 'LicenseProvider Class'
+	{
+		CLSID = s '{BBF085F4-B413-11D5-8689-7C9ECC000000}'
+		CurVer = s 'PatLic.LicenseProvider.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {BBF085F4-B413-11D5-8689-7C9ECC000000} = s 'LicenseProvider Class'
+		{
+			ProgID = s 'PatLic.LicenseProvider.1'
+			VersionIndependentProgID = s 'PatLic.LicenseProvider'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{BBF085E7-B413-11D5-8689-7C9ECC000000}'
+		}
+	}
+}

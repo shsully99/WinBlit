@@ -1,0 +1,77 @@
+HKCR
+{
+	WinBlitWebBand.CommBand.1 = s 'WinBlit Comm Band'
+	{
+		CLSID = s '{326215A6-58C1-11D5-8601-508750000000}'
+	}
+	WinBlitWebBand.CommBand = s 'WinBlit Comm Band'
+	{
+		CLSID = s '{326215A6-58C1-11D5-8601-508750000000}'
+		CurVer = s 'WinBlitWebBand.CommBand.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {326215A6-58C1-11D5-8601-508750000000} = s 'WinBlit Comm Band'
+		{
+			ProgID = s 'WinBlitWebBand.CommBand.1'
+			VersionIndependentProgID = s 'WinBlitWebBand.CommBand'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{155F89E1-568F-11D5-85FA-C6EA86000000}'
+			'Implemented Categories'
+			{
+				{00021494-0000-0000-C000-000000000046}
+				{
+				}
+			}
+		}
+	}
+}
+HKLM
+{
+	SOFTWARE
+	{
+		Microsoft
+		{	
+			'Internet Explorer'
+			{
+				NoRemove Extensions
+				{
+					ForceRemove {7FBFF7F0-58C8-11D5-8602-4E809D000000}
+					{
+						ForceRemove val HotIcon = s '%MODULE%,202'
+						ForceRemove val Icon = s '%MODULE%,201'
+						ForceRemove val ButtonText = s 'WinBlit'
+						ForceRemove val 'Default Visible' = s 'Yes'
+						ForceRemove val CLSID = s '{E0DD6CAB-2D10-11D2-8F1A-0000F87ABD16}'										
+						ForceRemove val BandCLSID =  s '{326215A6-58C1-11D5-8601-508750000000}'
+						ForceRemove val MenuText = s 'WinBlit Comm Band' 
+						ForceRemove val MenuStatusBar = s 'WinBlit Comm Band' 
+					}
+				}
+			}
+		}
+	}
+}
+HKEY_LOCAL_MACHINE
+{
+	NoRemove 'Software'
+	{
+		NoRemove 'Microsoft'
+		{
+			NoRemove 'Internet Explorer'
+			{
+				NoRemove 'Explorer Bars'
+				{
+					ForceRemove '{326215A6-58C1-11D5-8601-508750000000}'
+					{
+						val BarSize = b 'B800000000000000'
+					}
+				}
+			}
+		}
+	}
+}

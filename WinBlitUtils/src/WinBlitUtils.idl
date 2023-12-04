@@ -1,0 +1,15 @@
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(836DBF23-B723-11D5-868D-58CC6C000000),
+	version(1.0),
+	helpstring("WinBlitUtils 1.0 Type Library")
+]
+library WINBLITUTILSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

@@ -1,0 +1,51 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=WinBlit Speedread.chm
+Contents file=winblit.hhc
+Default topic=html\Introduction.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=WinBlit.hhk
+Language=0x409 English (United States)
+Title=WinBlit Speedread help
+
+
+[FILES]
+html\Word.htm
+html\AddConfiguration.htm
+html\BlitPad.htm
+html\Breakpoint.htm
+html\BreakPointsTab.htm
+html\Configuration.htm
+html\ConfigurationTab.htm
+html\ConfigurationType.htm
+html\ConfiguringWinBlit.htm
+html\ContextMenu.htm
+html\Fixation.htm
+html\FixationCycle.htm
+html\FixationDetails.htm
+html\FixationWidthType.htm
+html\FontsandColors.htm
+html\Glossary.htm
+html\Installation.htm
+html\InternetExplorer.htm
+html\Introduction.htm
+html\Metafile.htm
+html\Outlook.htm
+html\Registration.htm
+html\Requirements.htm
+html\ShortcutKeys.htm
+html\SpeedTab.htm
+html\Statusbar.htm
+html\TextWindow.htm
+html\Toolbar.htm
+html\Trackbar.htm
+html\Uninstallation.htm
+html\UsingWinBlitOverview.htm
+html\WinBlitWindowOverview.htm
+html\AddBreakpoint.htm
+html\Contact.htm
+html\General.htm
+
+[INFOTYPES]
+

@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+
+End Sub
+</SCRIPT>
+	<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<TABLE style="WIDTH: 580px; HEIGHT: 79px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  <TR>
+    <TD>
+      <P>To add a configuration select Settings (<IMG height=15 
+      alt="" src="settings.bmp" width=18>, 
+      <STRONG>Settings </STRONG>from Context menu or shortcut key 
+      <STRONG>"E"</STRONG> ). 
+      The first tab is called Configuration. On this tab you can see 2 buttons 
+      "Add Configuration" and "Remove Configuration". </P>
+      <P>This functionality is disabled in this demonstration but are 
+      available&nbsp;in the installed version of WinBlit Speedread. 
+  </P></TD></TR></TABLE>      
+</BODY>
+</HTML>

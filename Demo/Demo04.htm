@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+
+End Sub
+</SCRIPT>
+
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<P>
+<TABLE style="WIDTH: 580px; HEIGHT: 160px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  
+  <TR>
+    <TD>
+
+<P>          
+                   
+           Now lets have a 
+      closer look at the WinBlit&nbsp;Window in the frame below.          
+             
+           
+      </P>
+      <P>The Window is divided into 4 areas , from top to bottom these are the 
+      Toolbar , the Text Window, the Trackbar&nbsp;and the status bar at the 
+      bottom.</P>
+      <P><STRONG>ToolBar -</STRONG>          Each icon on the toolbar represents a unique function 
+      (you have already tried the "play" function). The toolbar 
+      is the first of 3 possible ways you can operate WinBlit. </P>
+      <P><STRONG>Text Window&nbsp; -&nbsp;</STRONG>          
+                  This 
+      is of course where&nbsp;the text is flashed to you in the manner you have 
+      chosen. As you will see later you have an 
+      enormous amount of control over how&nbsp;text appears and how it is flashed 
+      to you. . </P>
+      <P>
+      <TABLE style="WIDTH: 580px; HEIGHT: 92px" borderColor=#ffff99 
+      cellSpacing=0 cellPadding=0 width=580 align=center border=1>
+        
+        <TR>
+          <TD>
+            <P><STRONG>Trackbar - </STRONG>Beneath the text window you can see 
+            the trackbar which moves left to right as your reading 
+            progresses&nbsp;through a document. You can change your place in a 
+            document by clicking on the trackbar cursor and dragging it to the 
+            left or to the right. </P>
+            <P><STRONG>Statusbar - </STRONG>At the bottom of the Window you can 
+            see the status bar. When you are&nbsp;reading with WinBlit 
+            this&nbsp;displays some basic statistics on your reading speed. 
+          </P></TD></TR></TABLE></P>
+      <P>&nbsp;</P></TD></TR></TABLE>          
+             
+           
+      </P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+
+</BODY>
+</HTML>

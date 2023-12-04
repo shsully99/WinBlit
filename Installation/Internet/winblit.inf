@@ -1,0 +1,18 @@
+[version]
+    signature="$CHICAGO$"
+    AdvancedINF=2.0
+
+[Add.Code]
+    WinBlitReaderManager.dll=WinBlitReaderManager.dll
+    WinBlit.reg=WinBlit.reg
+
+[WinBlitReaderManager.dll]
+    file-win32-x86=thiscab
+    clsid={70AA5212-27A9-11D5-85B6-269F99000000}
+    FileVersion=2,0,0,1
+    RegisterServer=yes
+
+[WinBlit.reg]
+    file-win32-x86=thiscab
+
+  

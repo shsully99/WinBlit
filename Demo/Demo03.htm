@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 4.0">
+<TITLE></TITLE>
+<META name=VI60_defaultClientScript content=VBScript>
+
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+
+End Sub
+</SCRIPT>
+
+</HEAD>
+
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<P>
+<TABLE style="WIDTH: 578px; HEIGHT: 98px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=578 align=center border=1 id=TABLE1>
+  
+  <TR>
+    <TD>
+      <P>From the WinBlit&nbsp;Window you will be able to read the text of the 
+      document using a speed reading&nbsp;technique&nbsp;known as Rapid Serial 
+      Visual Presentation (RSVP). The basic idea of RSVP is to bring the text to 
+      your eyes rather than in traditional reading where your eyes move to text. 
+      Some people like RSVP because it helps them to read more quickly and 
+      others because they find it a more comfortable way to read. We hope it 
+      serves as an assistant to those of you bogged down in your working life 
+      with information overload on your PC.</P>
+      <P>For an example of what RSVP appears like click the button with 
+      the&nbsp;&nbsp;<IMG height=15 
+      alt="" src="play.bmp" width=17>&nbsp;icon on the toolbar 
+      below.</P>
+<P>Yes it is that simple. Text from whichever 
+      document are reading just gets flashed before your eyes. Though it may 
+      feel an unnatural way of reading at first with practise you may find that you can 
+      read more rapidly and that your comprehension will improve.&nbsp;&nbsp;</P></TD></TR></TABLE></P>
+
+</BODY>
+</HTML>

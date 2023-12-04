@@ -1,0 +1,26 @@
+HKCR
+{
+	WinBlitReaderManager.Settings.1 = s 'Settings Class'
+	{
+		CLSID = s '{A1777A98-27A6-11d5-85B6-269F99000000}'
+	}
+	WinBlitReaderManager.Settings = s 'Settings Class'
+	{
+		CLSID = s '{A1777A98-27A6-11d5-85B6-269F99000000}'
+		CurVer = s 'WinBlitReaderManager.Settings.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A1777A98-27A6-11d5-85B6-269F99000000} = s 'Settings Class'
+		{
+			ProgID = s 'WinBlitReaderManager.Settings.1'
+			VersionIndependentProgID = s 'WinBlitReaderManager.Settings'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A1777A94-27A6-11d5-85B6-269F99000000}'
+		}
+	}
+}

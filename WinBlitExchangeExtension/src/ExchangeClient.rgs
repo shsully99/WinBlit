@@ -1,0 +1,26 @@
+HKCR
+{
+	WinBlitExchangeExtension.ExchangeClient.1 = s 'ExchangeClient Class'
+	{
+		CLSID = s '{53D15914-7F52-11D5-8658-2CE87E000000}'
+	}
+	WinBlitExchangeExtension.ExchangeClient = s 'ExchangeClient Class'
+	{
+		CLSID = s '{53D15914-7F52-11D5-8658-2CE87E000000}'
+		CurVer = s 'WinBlitExchangeExtension.ExchangeClient.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {53D15914-7F52-11D5-8658-2CE87E000000} = s 'ExchangeClient Class'
+		{
+			ProgID = s 'WinBlitExchangeExtension.ExchangeClient.1'
+			VersionIndependentProgID = s 'WinBlitExchangeExtension.ExchangeClient'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{53D15907-7F52-11D5-8658-2CE87E000000}'
+		}
+	}
+}

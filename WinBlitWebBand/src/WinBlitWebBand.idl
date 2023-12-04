@@ -1,0 +1,57 @@
+// WinBlitWebBand.idl : IDL source for WinBlitWebBand.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WinBlitWebBand.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(326215A3-58C1-11D5-8601-508750000000),
+		dual,
+		helpstring("IExplorerBand Interface"),
+		pointer_default(unique)
+	]
+	interface IExplorerBand : IDispatch
+	{
+	};
+	[
+		object,
+		uuid(326215A5-58C1-11D5-8601-508750000000),
+		dual,
+		helpstring("ICommBand Interface"),
+		pointer_default(unique)
+	]
+	interface ICommBand : IDispatch
+	{
+		[id(1), helpstring("method SetDocument")] HRESULT SetDocument(IDispatch *pDisp);
+	};
+
+[
+	uuid(155F89E1-568F-11D5-85FA-C6EA86000000),
+	version(1.0),
+	helpstring("WinBlitWebBand 1.0 Type Library")
+]
+library WINBLITWEBBANDLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(326215A4-58C1-11D5-8601-508750000000),
+		helpstring("ExplorerBandClass")
+	]
+	coclass ExplorerBand
+	{
+		[default] interface IExplorerBand;
+	};
+	[
+		uuid(326215A6-58C1-11D5-8601-508750000000),
+		helpstring("CommBandClass")
+	]
+	coclass CommBand
+	{
+		[default] interface ICommBand;
+	};
+};

@@ -1,0 +1,120 @@
+[Root]
+Most Recent Package=TestHarness
+
+
+[Package|TestHarness|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Package
+
+[Package|TestHarness|Configure DAO ISAMs]
+Applicable=No
+
+[Package|TestHarness|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|TestHarness|Files Found]
+
+[Package|TestHarness|Files Released]
+
+[Package|TestHarness|Missing Dependency Information]
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\WinBlitReaderManager\export\run\WinBlitReaderManager.dll=
+C:\Program Files\PataSucia\WinBlit\WinBlitReaderManager.dll=
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\WinBlitReaderManager\export\run\WinBlitReaderManagerd.dll=
+
+[Package|TestHarness|Out-of-Date Dependency Information]
+
+[Package|TestHarness|Files Added]
+c:\documents and settings\sean sullivan\my documents\winblit\testharness\large.doc=
+c:\documents and settings\sean sullivan\my documents\winblit\testharness\b.txt=
+c:\documents and settings\sean sullivan\my documents\winblit\testharness\c.txt=
+c:\documents and settings\sean sullivan\my documents\winblit\testharness\a.txt=
+c:\documents and settings\sean sullivan\my documents\winblit\testharness\large.htm=
+c:\documents and settings\sean sullivan\my documents\winblit\testharness\large.txt=
+
+[Package|TestHarness|Files Removed]
+c:\documents and settings\sean sullivan\my documents\winblit\winblitreadermanager\export\run\winblitreadermanager.dll=
+c:\documents and settings\sean sullivan\my documents\winblit\winblitreadermanager\export\run\winblitreadermanagerd.dll=
+
+[Package|TestHarness|Files In Project]
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\TestHarness.exe=Yes
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.doc=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\B.txt=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\c.txt=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\a.txt=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.htm=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.txt=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\WinBlitReaderManager\export\run\WinBlitReaderManagerd.dll=No
+
+[Package|TestHarness|Configure Registry Files]
+Applicable=No
+
+[Package|TestHarness|Configure Remote Servers]
+Applicable=No
+
+[Package|TestHarness|Install Locations]
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\TestHarness.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\WinBlitReaderManager\export\run\WinBlitReaderManager.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.doc=$(AppPath)
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\B.txt=$(AppPath)
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\c.txt=$(AppPath)
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\a.txt=$(AppPath)
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.htm=$(AppPath)
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.txt=$(AppPath)
+C:\Program Files\PataSucia\WinBlit\WinBlitReaderManager.dll=$(WinSysPath)
+
+[Package|TestHarness|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\TestHarness.exe=No
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.doc=No
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\B.txt=No
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\c.txt=No
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\a.txt=No
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.htm=No
+C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Large.txt=No
+
+[Package|TestHarness|Distribution]
+Type=single
+Size=
+Title=TestHarness
+
+[Package|TestHarness|Package]
+PackageFolder=C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Package
+ProjectFolder=C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness
+ServerSideCab=
+File1=C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Package\setup.exe
+File2=C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Package\Setup.Lst
+File3=C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\TestHarness\Package\TestHarness.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|TestHarness|IconGroups]
+Group0=TestHarness
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|TestHarness|TestHarness]
+Icon1=TestHarness.exe
+Title1=TestHarness
+StartIn1=$(AppPath)
+Key1=Icon1

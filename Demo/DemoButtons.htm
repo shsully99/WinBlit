@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 4.0">
+<TITLE></TITLE>
+<META name=VI60_defaultClientScript content=VBScript>
+<!--
+ document_onactivate()
+//-->
+</SCRIPT>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+
+Sub Setup
+	On Error Resume Next
+	strref = window.parent.frames(1).location.href
+	i = InStr (1, strref, ".htm", 1)
+	strNum = Mid (strref, i - 2, 2)
+	Page.value = CInt(strNum)
+	SetButtons	
+End Sub
+
+Sub NextObj_onclick
+	On Error Resume Next
+	Page.value = Page.value + 1
+	str = "Demo"
+	if Page.value < 10 Then
+		str = str & "0"
+	End If
+	str = str & CStr(Page.value)
+	str = str & ".htm"
+	window.parent.frames(1).location.href = str
+	SetButtons
+End Sub
+
+Sub Previous_onclick
+	On Error Resume Next
+	Page.value = Page.value - 1
+	str = "Demo"
+	if Page.value < 10 Then
+		str = str & "0"
+	End If
+	str = str & CStr(Page.value)
+	str = str & ".htm"
+	window.parent.frames(1).location.href = str
+	SetButtons
+End Sub
+
+Sub SetButtons
+	On Error Resume Next
+	if Page.value  < 2 then
+		Previous.style.visibility = "hidden"
+		NextObj.style.visibility = "visible"
+	ElseIf Page.value > 10 Then
+		Previous.style.visibility = "visible"
+		NextObj.style.visibility = "hidden"
+	Else
+		Previous.style.visibility = "visible"
+		NextObj.style.visibility = "visible"
+	End If
+End Sub
+
+</SCRIPT>
+</HEAD>
+<BODY onload = Setup() bgColor=#ffff99>
+<P align=center>&nbsp;</P>
+<P align=center>
+<TABLE style="BORDER-LEFT-COLOR: #ffff99; BORDER-BOTTOM-COLOR: #ffff99; WIDTH: 35px; BORDER-TOP-COLOR: 
+#ffff99; HEIGHT: 90px; BORDER-RIGHT-COLOR: #ffff99" cellSpacing=1 cellPadding=1 width=35 border=0 borderColor=#ffff99 borderColorDark=#ffff99 borderColorLight=#ffff99>
+  
+  <TR>
+    <TD><INPUT id=NextObj style="LEFT: 178px; WIDTH: 88px; COLOR: #ff0000; TOP: 15px; HEIGHT: 27px; BACKGROUND-COLOR: lightgrey" type=button size=27 value="Next >>" name=NextObj></TD></TR>
+  <TR>
+    <TD><INPUT id=Previous style="LEFT: 161px; VISIBILITY: visible; WIDTH: 86px; COLOR: #ff0000; TOP: 243px; HEIGHT: 30px; BACKGROUND-COLOR: lightgrey" type=button size=13 value="  << Previous" name=Previous></TD></TR>
+  <TR>
+    <TD><INPUT id=Page 
+      style="LEFT: 31px; VISIBILITY: hidden; WIDTH: 3px; TOP: 105px; HEIGHT: 22px"></TD></TR></TABLE></P>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;&nbsp;&nbsp;&nbsp;</P>
+<P align=center>&nbsp;&nbsp;&nbsp;</P>
+<P align=center>&nbsp;</P>
+
+</BODY>
+</HTML>

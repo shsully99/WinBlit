@@ -1,0 +1,26 @@
+HKCR
+{
+	WinBlitDataManager.WinBlitData.1 = s 'WinBlitData Class'
+	{
+		CLSID = s '{0E9E0E60-190E-11D5-859E-6CA415000000}'
+	}
+	WinBlitDataManager.WinBlitData = s 'WinBlitData Class'
+	{
+		CLSID = s '{0E9E0E60-190E-11D5-859E-6CA415000000}'
+		CurVer = s 'WinBlitDataManager.WinBlitData.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {0E9E0E60-190E-11D5-859E-6CA415000000} = s 'WinBlitData Class'
+		{
+			ProgID = s 'WinBlitDataManager.WinBlitData.1'
+			VersionIndependentProgID = s 'WinBlitDataManager.WinBlitData'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A1777A94-27A6-11d5-85B6-269F99000000}'
+		}
+	}
+}

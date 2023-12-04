@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2 
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+End Sub
+</SCRIPT>
+
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<P>
+<TABLE style="WIDTH: 580px; HEIGHT: 160px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  
+  <TR>
+    <TD>
+      <P>Once you have installed WinBlit you will see a new&nbsp;button on the 
+      toolbars&nbsp;which appear at the top of 
+      Microsoft Word, Internet Explorer and the Outlook e-mail window. The button&nbsp;will contain an 
+      icon like this <IMG alt="" 
+      src="winblitre.bmp">. </P>
+      <P align=center><IMG alt="" 
+      src="InternetExplorer.gif"></P>
+      <P align=center><STRONG>Internet Explorer Toolbar containing WinBlit 
+      button&nbsp;(on the right hand side of screen)</STRONG></P>
+      <P align=center><STRONG><IMG alt="" 
+      src="word.gif"></STRONG></P>
+      <P align=center><STRONG>Microsoft Word Toolbar containing WinBlit button 
+      (on bottom left of screen)</STRONG></P>
+      <P align=center><IMG alt="" 
+      src="outlook.gif"></P>
+      <P align=center><STRONG>Microsoft&nbsp;Outlook Toolbar containing WinBlit 
+      button (on&nbsp;the right hand side&nbsp;of screen). This only appears on 
+      the toolbar of open e-mails in Outlook. </STRONG></P>
+      <P>Whenever you click the&nbsp;button in any of these programs (or its 
+      associated menu entry), the WinBlit Window will appear to allow you to 
+      speed read the contents of the word document, email or web page. </P>
+      <P>WinBlit also appears in a standalone application called BlitPad which 
+      you can start from the Windows start menu. BlitPad allows you to speedread 
+      any text file as well as the contents of the Windows clipboard. </P>
+      <P>As previously mentioned in&nbsp;this demonstration&nbsp;WinBlit is 
+      shown&nbsp;inside a&nbsp;web page. If you are using WinBlit from Outlook, 
+      Word or BlitPad it appears inside&nbsp;its own dialog box. In Internet 
+      Explorer it will appear in its own band at the bottom of the browser. 
+    </P> 
+     </TD></TR></TABLE>&nbsp;&nbsp;&nbsp;</P>
+
+</BODY>
+</HTML>

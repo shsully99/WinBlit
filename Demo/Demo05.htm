@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+
+End Sub
+</SCRIPT>
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+<TABLE style="WIDTH: 580px; HEIGHT: 160px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  
+  <TR>
+    <TD>
+      <P>Now we will discuss the 3 main ways in which&nbsp;a user can operate 
+      WinBlit when speed reading. </P>
+      <P>1<STRONG>) Toolbar </STRONG>- 
+      As discussed each toolbar button corresponds to a different operation you 
+      can perform on WinBlit (we have already tried <IMG height=15 alt="" 
+      src="play.bmp" width=17>      
+          ). To get an idea of&nbsp;what&nbsp;each button does move 
+      the mouse over each button in the window below.&nbsp;You should see&nbsp;some&nbsp;tooltips&nbsp;displayed&nbsp; 
+      to you&nbsp;giving you a clue to the operation- we will discuss&nbsp;each of these shortly. 
+      </P>
+      <P><STRONG>2) Context menu - </STRONG>   Click the right button of the mouse anywhere 
+      in the WinBlit Text window. You will see a context menu displayed. 
+      Each word on the context menu when selected 
+      corresponds to a different operation you can carry 
+      out on WinBlit.</P>
+      <P><STRONG>3) Shortcut keys - </STRONG>The&nbsp;third way&nbsp; of 
+      operating WinBlit is by shortcut keys. They are also the recommended way 
+      of operating WinBlit once you become accustomed to it as for example it is 
+      much easier to just hit the spacebar to start speed reading than to click 
+      a toolbar button with the mouse or select an entry from the context menu. 
+      </P>
+      <P>Shortcut&nbsp;keys are available whenever the WinBlit text window is in 
+      focus. To put&nbsp;the WinBlit&nbsp;Window in&nbsp;focus and make these 
+      shortcut keys available simply&nbsp;left mouse-click anywhere inside the 
+      Text Window.&nbsp;&nbsp;</P></TD></TR></TABLE> 
+</BODY>
+</HTML>

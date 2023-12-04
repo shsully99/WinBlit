@@ -1,0 +1,38 @@
+// WinBlitExchangeExtension.idl : IDL source for WinBlitExchangeExtension.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WinBlitExchangeExtension.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(53D15913-7F52-11D5-8658-2CE87E000000),
+		dual,
+		helpstring("IExchangeClient Interface"),
+		pointer_default(unique)
+	]
+	interface IExchangeClient : IDispatch
+	{
+	};
+
+[
+	uuid(53D15907-7F52-11D5-8658-2CE87E000000),
+	version(1.0),
+	helpstring("WinBlitExchangeExtension 1.0 Type Library")
+]
+library WINBLITEXCHANGEEXTENSIONLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(53D15914-7F52-11D5-8658-2CE87E000000),
+		helpstring("ExchangeClient Class")
+	]
+	coclass ExchangeClient
+	{
+		[default] interface IExchangeClient;
+	};
+};

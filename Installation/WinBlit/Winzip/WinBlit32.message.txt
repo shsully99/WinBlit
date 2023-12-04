@@ -1,0 +1,5 @@
+It is recommended that you log into an account with Administrator
+privilege before installing WinBlit. 
+Also please close Microsoft Word, Outlook and Internet Explorer
+prior to installing WinBlit. 
+

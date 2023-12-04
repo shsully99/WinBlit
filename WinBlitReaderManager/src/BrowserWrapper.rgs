@@ -1,0 +1,26 @@
+HKCR
+{
+	WinBlitReaderManager.BrowserWrapper.1 = s 'BrowserWrapper Class'
+	{
+		CLSID = s '{27506A62-712F-11D5-862D-C05E6D000000}'
+	}
+	WinBlitReaderManager.BrowserWrapper = s 'BrowserWrapper Class'
+	{
+		CLSID = s '{27506A62-712F-11D5-862D-C05E6D000000}'
+		CurVer = s 'WinBlitReaderManager.BrowserWrapper.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {27506A62-712F-11D5-862D-C05E6D000000} = s 'BrowserWrapper Class'
+		{
+			ProgID = s 'WinBlitReaderManager.BrowserWrapper.1'
+			VersionIndependentProgID = s 'WinBlitReaderManager.BrowserWrapper'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A1777A94-27A6-11d5-85B6-269F99000000}'
+		}
+	}
+}

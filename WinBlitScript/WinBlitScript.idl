@@ -1,0 +1,44 @@
+// WinBlitScript.idl : IDL source for WinBlitScript.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WinBlitScript.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(B43CBC08-742A-4596-9C5F-C6B412F0E52C),
+		dual,
+		helpstring("IBlitScript Interface"),
+		pointer_default(unique)
+	]
+	interface IBlitScript : IDispatch
+	{
+		[id(1), helpstring("method LoadData")]		HRESULT LoadData([in] long lDataSourceType, [in] VARIANT varDataSource);
+		[id(2), helpstring("method UnloadData")]	HRESULT UnloadData();
+		[id(3), helpstring("method Display")]		HRESULT Display();
+	};
+
+[
+	uuid(6E78E359-D370-4798-9B32-E92AB675A13B),
+	version(1.0),
+	helpstring("WinBlitScript 1.0 Type Library")
+]
+library WINBLITSCRIPTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(D8B3C8E3-F2F4-44D0-A4B4-C8E098813569),
+		helpstring("BlitScript Class")
+	]
+	coclass BlitScript
+	{
+		[default] interface IBlitScript;
+	};
+};

@@ -1,0 +1,138 @@
+////////////////////////////////////////////////////////////////////////////////
+///////////////////InstallShield Media Library Report Summary///////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+Media Name      : New Media
+Report Filename : C:\Documents and Settings\Sean Sullivan\My Documents\WINBLIT\Installation\WinBlit Productivity Tool\Media\New Media\Report Files\2-07-2002 12.09.16PM.rpt
+Date            : 02/07/2002
+Time            : 12:09PM
+
+Number of Components:                3 
+Number of File Groups:               8 
+Number of Files:                     7 
+Total Size of Files:         1,381,701 (bytes)
+
+==========
+COMPONENTS
+==========
+
+
+     TargetDir
+     ExchangeExtension
+     SelfRegDlls
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////Report Details/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+================================================================================
+                             COMPONENT: "TargetDir"
+================================================================================
+
+SUMMARY:
+    Total Files:                3 (files for this component only)
+    Source Bytes:          70,860 (files for this component only)
+
+
+                       **** File Group: "Help Files" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\Help Files\HTMLhelp
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlit.chm                 02/07/2002  10:48:32       23,612               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                23,612               
+
+
+                          **** File Group: "Reg" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\Registry
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlit.reg                 02/07/2002  10:48:38       13,968               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                13,968               
+
+
+                     **** File Group: "Word Template" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\Office
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlitTemplate.dot         02/07/2002  10:48:37       33,280               
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                                33,280               
+
+
+================================================================================
+                         COMPONENT: "ExchangeExtension"
+================================================================================
+
+SUMMARY:
+    Total Files:                1 (files for this component only)
+    Source Bytes:         193,740 (files for this component only)
+
+
+                   **** File Group: "ExchangeExtension" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\WinBlitExchangeExtension\export\run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    ...itExchangeExtension.dll  02/07/2002  11:49:45      122,880  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               122,880               
+
+
+================================================================================
+                            COMPONENT: "SelfRegDlls"
+================================================================================
+
+SUMMARY:
+    Total Files:                3 (files for this component only)
+    Source Bytes:       1,381,701 (files for this component only)
+
+
+                          **** File Group: "Log" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\ATLLogApp\export\run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    ATLLogApp.dll               02/07/2002  10:53:16      233,472  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               233,472               
+
+
+                     **** File Group: "ReaderManager" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\WinBlitReaderManager\Export\Run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlitReaderManager.dll    02/07/2002  11:46:31      401,408  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               401,408               
+
+
+                        **** File Group: "WebBand" ****
+
+
+<Directory>: C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\WinBlitWebBand\export\run
+
+    Filename                    Date        Time      Size         Version      
+    --------------------------  ----------  --------  -----------  -------------
+    WinBlitWebBand.dll          02/07/2002  12:00:35      553,081  1.0.0.1      
+    --------------------------  ----------  --------  -----------  -------------
+    Count=1                                               553,081               

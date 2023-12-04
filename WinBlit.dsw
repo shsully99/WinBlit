@@ -1,0 +1,109 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ATLLogApp"=".\ATLLogApp\src\ATLLogApp.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/winblit/AtlLogApp/src", EAAAAAAA
+    .\atllogapp\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WinBlitExchangeExtension"=".\WinBlitExchangeExtension\src\WinBlitExchangeExtension.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/winblit/WinBlitExchangeExtension/src", SGAAAAAA
+    .\winblitexchangeextension\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WinBlitPad"=".\WinBlitPad\src\WinBlitPad.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WinBlitReaderManager"=".\WinBlitReaderManager\src\WinBlitReaderManager.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/winblit/WinBlitReaderManager/src", AHAAAAAA
+    .\winblitreadermanager\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WinBlitUtils"=".\WinBlitUtils\src\WinBlitUtils.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/winblit/WinBlitUtils/src", GHAAAAAA
+    .\winblitutils\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "WinBlitWebBand"=".\WinBlitWebBand\src\WinBlitWebBand.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/winblit/WinBlitWebBand/src", MHAAAAAA
+    .\winblitwebband\src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

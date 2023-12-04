@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debugw95|Win32">
+      <Configuration>Debugw95</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MinDependency|Win32">
+      <Configuration>Release MinDependency</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/winblit/WinBlitReaderManager/src", AHAAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>AtlProj</Keyword>
+    <ProjectGuid>{67992B0E-8304-454A-B61C-2961921A0F55}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">
+    <OutDir>.\ReleaseMinDependency\</OutDir>
+    <IntDir>.\ReleaseMinDependency\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">
+    <OutDir>.\WinBlitReaderManager___Win32_Debugw95\</OutDir>
+    <IntDir>.\WinBlitReaderManager___Win32_Debugw95\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\wtlincludes;..\import\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\WinBlitReaderManager.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>"C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\ReaderRedist"</Command>
+      <Message>Distribute</Message>
+    </PostBuildEvent>
+    <Midl>
+      <TypeLibraryName>.\Debug\WinBlitReaderManager.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\WinBlitReaderManager.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\Export\Run\WinBlitReaderManagerd.dll</OutputFile>
+      <ImportLibrary>.\Debug\WinBlitReaderManagerd.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\import\build;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\WinBlitReaderManager.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..;..\..\wtlincludes;..\import\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseMinDependency\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\ReleaseMinDependency\WinBlitReaderManager.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseMinDependency\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMinDependency\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>"C:\Documents and Settings\Sean Sullivan\My Documents\WinBlit\ReaderRedist"</Command>
+      <Message>Redist</Message>
+    </PostBuildEvent>
+    <Midl>
+      <TypeLibraryName>.\ReleaseMinDependency\WinBlitReaderManager.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseMinDependency\WinBlitReaderManager.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\Export\Run\WinBlitReaderManager.dll</OutputFile>
+      <ImportLibrary>.\ReleaseMinDependency\WinBlitReaderManager.lib</ImportLibrary>
+      <AdditionalDependencies>version.lib;odbc32.lib;odbccp32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\WinBlitReaderManager.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\wtlincludes;..\import\build;..\..\WinBlitUtils\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\WinBlitReaderManager___Win32_Debugw95\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\WinBlitReaderManager___Win32_Debugw95\WinBlitReaderManager.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\WinBlitReaderManager___Win32_Debugw95\</ObjectFileName>
+      <ProgramDataBaseFileName>.\WinBlitReaderManager___Win32_Debugw95\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\WinBlitReaderManager___Win32_Debugw95\WinBlitReaderManager.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\WinBlitReaderManager___Win32_Debugw95\WinBlitReaderManager.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\Export\Run\WinBlitReaderManagerd.dll</OutputFile>
+      <ImportLibrary>.\WinBlitReaderManager___Win32_Debugw95\WinBlitReaderManagerd.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\WinBlitReaderManager.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="About.cpp" />
+    <ClCompile Include="BlitUtils.cpp" />
+    <ClCompile Include="BltCreator.cpp" />
+    <ClCompile Include="BrowserWrapper.cpp" />
+    <ClCompile Include="HTMLReader.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="PropPage.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="Reg.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="ReportError.cpp" />
+    <ClCompile Include="Setting.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="Speed.cpp" />
+    <ClCompile Include="Statistic.cpp" />
+    <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="StringReader.cpp" />
+    <ClCompile Include="TextWindow.cpp" />
+    <ClCompile Include="TXTReader.cpp" />
+    <ClCompile Include="W95TRACE.CPP" />
+    <ClCompile Include="WinBlitData.cpp" />
+    <ClCompile Include="WinBlitProperties.cpp" />
+    <ClCompile Include="WinBlitReader.cpp" />
+    <ClCompile Include="WinBlitReaderManager.cpp" />
+    <ClCompile Include="WinBlitRegistry.cpp" />
+    <ClCompile Include="WordReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BlitScript.rgs" />
+    <CustomBuild Include="BrowserWrapper.rgs" />
+    <CustomBuild Include="Setting.rgs" />
+    <CustomBuild Include="Settings.rgs" />
+    <CustomBuild Include="Statistic.rgs" />
+    <CustomBuild Include="Statistics.rgs" />
+    <CustomBuild Include="TrackBarWindow.rgs" />
+    <CustomBuild Include="WinBlitData.rgs" />
+    <CustomBuild Include="WinBlitReader.rgs" />
+    <CustomBuild Include="WinBlitReaderManager.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="WinBlitReaderManager.idl">
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\WinBlitReaderManager.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WinBlitReaderManager.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WinBlitReaderManager_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">.\WinBlitReaderManager.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">WinBlitReaderManager.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">WinBlitReaderManager_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">.\WinBlitReaderManager.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">WinBlitReaderManager.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">WinBlitReaderManager_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">true</GenerateStublessProxies>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinBlitReaderManager.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release MinDependency|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debugw95|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="About.h" />
+    <ClInclude Include="BlitUtils.h" />
+    <ClInclude Include="BltCreator.h" />
+    <ClInclude Include="BrowserWrapper.h" />
+    <ClInclude Include="FullTlb.h" />
+    <ClInclude Include="HTMLReader.h" />
+    <ClInclude Include="IDLConstants.h" />
+    <ClInclude Include="PropPage.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="Reg.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Setting.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="Speed.h" />
+    <ClInclude Include="Statistic.h" />
+    <ClInclude Include="Statistics.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StlClasses.h" />
+    <ClInclude Include="StringReader.h" />
+    <ClInclude Include="TextWindow.h" />
+    <ClInclude Include="TXTReader.h" />
+    <ClInclude Include="W95TRACE.H" />
+    <ClInclude Include="WinBlitConstants.h" />
+    <ClInclude Include="WinBlitData.h" />
+    <ClInclude Include="WinBlitDataError.h" />
+    <ClInclude Include="WinBlitProperties.h" />
+    <ClInclude Include="WinBlitReader.h" />
+    <ClInclude Include="WinBlitRegistry.h" />
+    <ClInclude Include="WordReader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap1.bmp" />
+    <Image Include="bitmap2.bmp" />
+    <Image Include="bmp00001.bmp" />
+    <Image Include="toolbar.bmp" />
+    <Image Include="winblitre.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Import\Build\htmlhelp.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

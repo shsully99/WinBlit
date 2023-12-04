@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<META name=VI60_defaultClientScript content=VBScript>
+<TITLE></TITLE>
+</HEAD>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+
+Sub Setup (i)
+	On Error Resume Next
+	Set WB  = window.parent.parent.frames(1).document.WinBlitReader
+	If i = 0 Then
+		WB.DemoMode = 2
+		WB.LoadData 10005, window.document		
+		WB.Display
+	Else 
+		WB.UnloadData 		
+	End If
+
+End Sub
+</SCRIPT>
+
+<BODY onload = Setup(0) onunload = Setup(1) text=black bgColor=#ffff99>
+
+<TABLE style="WIDTH: 580px; HEIGHT: 90px" borderColor=#ffff99 cellSpacing=0 
+cellPadding=0 width=580 align=center border=1>
+  
+  <TR>
+    <TD>
+      <P>A collection of particular settings together&nbsp;form a WinBlit 
+      Configuration. When you install WinBlit it comes with 3 already set up for 
+      you. </P>
+      <P>To change the current configuration of WinBlit : - </P>        
+                   
+             
+      
+<P><STRONG>Either</STRONG> Click on the&nbsp;<IMG height=15 
+      alt="" src="configs.bmp" width=17> button on the 
+      toolbar&nbsp;<STRONG>OR</STRONG> 
+          select <STRONG>Configurations</STRONG>  
+       from the&nbsp;context menu.              
+  </P></TD></TR></TABLE>
+  
+</BODY>
+</HTML>

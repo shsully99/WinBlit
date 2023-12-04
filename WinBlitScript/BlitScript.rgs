@@ -1,0 +1,33 @@
+HKCR
+{
+	WinBlitScript.BlitScript.1 = s 'BlitScript Class'
+	{
+		CLSID = s '{D8B3C8E3-F2F4-44D0-A4B4-C8E098813569}'
+	}
+	WinBlitScript.BlitScript = s 'BlitScript Class'
+	{
+		CLSID = s '{D8B3C8E3-F2F4-44D0-A4B4-C8E098813569}'
+		CurVer = s 'WinBlitScript.BlitScript.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D8B3C8E3-F2F4-44D0-A4B4-C8E098813569} = s 'BlitScript Class'
+		{
+			ProgID = s 'WinBlitScript.BlitScript.1'
+			VersionIndependentProgID = s 'WinBlitScript.BlitScript'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{6E78E359-D370-4798-9B32-E92AB675A13B}'
+			'Version' = s '1.0'
+		}
+	}
+}
